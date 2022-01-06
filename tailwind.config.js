@@ -11,7 +11,11 @@ module.exports = {
       ...screens
     },
 
-    extend: {},
+    extend: {
+      color:{
+        'mcmendel-green':'#ADF455'
+      }
+    },
   },
   plugins: [],
 }
