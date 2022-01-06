@@ -1,4 +1,4 @@
-const { screens } = require('tailwindcss/defaultTheme')
+const { screens, letterSpacing } = require('tailwindcss/defaultTheme')
 module.exports = {
   mode: 'jit',
   content: [
@@ -12,9 +12,14 @@ module.exports = {
     },
 
     extend: {
-      color:{
-        'mcmendel-green':'#ADF455'
+      colors: {
+        'mcmendel-green': '#83c99e'
+      },
+
+      letterSpacing: {
+        "mcmendel-2em":"0.8em"
       }
+
     },
   },
   plugins: [],
