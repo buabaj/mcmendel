@@ -6,6 +6,11 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
+    
+    minHeight: (theme) => ({
+      ...theme('spacing'),
+    }),
+
     screens: {
       'xsm': '480px',
       ...screens
@@ -13,7 +18,13 @@ module.exports = {
 
     extend: {
       colors: {
-        'mcmendel-green': '#83c99e'
+        'mcmendel-green-primary': '#AED652',
+        'mcmendel-green': '#83c99e',
+        'mcmendel-orange-primary': '#F78708'
+      },
+
+      fontSize:{
+        'mcmendel-rem-1.2':'1.2rem'
       },
 
       letterSpacing: {
