@@ -3,6 +3,7 @@ import React from 'react'
 import ArrowLeft from '../../public/left-arrow.svg'
 import ArrowRight from '../../public/right-arrow.svg'
 import SolarEnergy from '../../public/solar-energy.png';
+import SlickSlider from '../utilities/swiper/slick';
 
 
 function Index() {
@@ -46,7 +47,7 @@ function Index() {
 
             </section>
 
-            <section className="px-32 py-10">
+            <section className="px-52 py-10">
                 <h1 className="text-4xl mb-5 text-bg-green-400">
                     About McMendel
                 </h1>
@@ -85,7 +86,7 @@ function Index() {
             </section>
 
 
-            <section className="px-32 py-10 bg-green-50">
+            <section className="px-52 py-10 bg-green-50">
                 <h1 className="text-4xl mb-5 text-bg-green-400">
                     Our Objectives
                 </h1>
@@ -106,8 +107,22 @@ function Index() {
 
             </section>
 
-            <section className="relative min-h-screen w-full">
-                {/* <Image layout='fill' src={RenewableEnergy} alt="arrow left" /> */}
+            <section className="px-52 py-10">
+                <h1 className="text-4xl mb-5 text-bg-green-400">
+                    Renewable energy in Ghana
+                </h1>
+
+                <p className=" text-mcmendel-rem-1.2 opacity-70 tracking-wide">
+                    The combustion of fossil fuels for energy results in a significant amount of greenhouse gas emissions that contribute to global warming. Most sources of renewable energy result in little to no emissions, even when considering the full life cycle of the technologies.  The three main renewable energy sources in Ghana are:
+                </p>
+
+                <div className="mt-16">
+                    <SlickSlider />
+                </div>
+            </section>
+
+            <section className="h-screen px-52 py-10 bg-green-50">
+
             </section>
 
             <footer>

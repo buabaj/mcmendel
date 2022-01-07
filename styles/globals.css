@@ -3,7 +3,25 @@
 @tailwind utilities;
 
 
+
 * {
   box-sizing: border-box;
   font-family: Roboto, sans-serif;
 }
+
+.slick-slider .slick-arrow.slick-disabled{
+      display: none !important;
+  }
+
+.slick-current .use-case-card{
+    border: 2px solid #4361EE;
+}
+
+.slick-dots {
+  bottom: 350px !important;
+}
+
+.slick-dots li button:before {
+    color: white !important;
+    font-size: 10px !important;
+  }

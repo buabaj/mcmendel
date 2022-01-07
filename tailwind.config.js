@@ -6,7 +6,7 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    
+
     minHeight: (theme) => ({
       ...theme('spacing'),
     }),
@@ -23,12 +23,21 @@ module.exports = {
         'mcmendel-orange-primary': '#F78708'
       },
 
-      fontSize:{
-        'mcmendel-rem-1.2':'1.2rem'
+      height: {
+        'mcmendel-px-240': '240px',
+
+      },
+
+      width: {
+        'mcmendel-px-280': '280px'
+      },
+
+      fontSize: {
+        'mcmendel-rem-1.2': '1.2rem'
       },
 
       letterSpacing: {
-        "mcmendel-2em":"0.8em"
+        "mcmendel-2em": "0.8em"
       }
 
     },
