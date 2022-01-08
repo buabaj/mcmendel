@@ -18,10 +18,62 @@
 }
 
 .slick-dots {
-  bottom: 350px !important;
+  bottom: 280px !important;
 }
 
 .slick-dots li button:before {
-    color: white !important;
+    color: #AED652 !important;
     font-size: 10px !important;
-  }
+}
+
+
+@layer base {
+
+    nav {
+      @apply hidden md:flex w-full h-14 justify-center gap-10 items-center font-semibold sticky;
+    }
+    section.padded{
+      @apply px-5 sm:px-16 lg:px-52 py-10;
+    }
+    
+    h1{
+      @apply text-center text-2xl sm:text-left md:text-3xl lg:text-4xl;
+    }
+
+    h1.main-header{
+      @apply text-4xl md:text-7xl font-bold text-mcmendel-green-primary;
+    }
+
+    h2.sub-header{
+      @apply text-xl md:text-2xl text-mcmendel-orange-primary font-semibold text-center mt-2 tracking-mcmendel-2em;
+    }
+
+
+    h2{
+      @apply text-2xl mb-5;
+    }
+
+    p.lg{
+      @apply text-lg sm:text-mcmendel-rem-1.2 opacity-70 tracking-wide;
+    }
+
+    footer{
+      height: 50vh;
+      @apply bg-green-50 w-full;
+    }
+    
+    /* 
+    h3{
+        @apply
+    } */
+}
+
+@layer utilities {
+    .objective-card{
+        @apply 
+    }
+
+    .card-about{
+        @apply bg-green-50 py-5 min-h-60 px-10;
+    }
+}
