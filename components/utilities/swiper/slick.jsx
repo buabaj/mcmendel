@@ -41,7 +41,7 @@ export default function SlickSlider() {
                 ]}>
 
                 <div>
-                    <div className="use-case-card cursor-pointer h-mcmendel-px-240 w-mcmendel-px-280 m-auto flex justify-center items-center bg-oval-use-case-1 transition-all hover:scale-105 rounded-lg">
+                    <div className="use-case-card cursor-pointer h-mcmendel-px-200 w-mcmendel-px-240 m-auto flex justify-center items-center bg-oval-use-case-1 transition-all hover:scale-105 rounded-lg">
                         <div className='h-36 bg-yellow-200 w-36 relative'>
                             <Image layout='fill' loading='lazy' objectFit='contain' src={SolarEnergy} alt='oval use case' />
                         </div>
@@ -51,7 +51,7 @@ export default function SlickSlider() {
 
 
                 <div>
-                    <div className="use-case-card cursor-pointer h-mcmendel-px-240 w-mcmendel-px-280 m-auto flex justify-center items-center bg-oval-use-case-2 transition-all hover:scale-105 rounded-lg">
+                    <div className="use-case-card cursor-pointer h-mcmendel-px-200 w-mcmendel-px-240 m-auto flex justify-center items-center bg-oval-use-case-2 transition-all hover:scale-105 rounded-lg">
                         <div className='h-36 bg-yellow-200 w-36 relative'>
                             <Image layout='fill' loading='lazy' objectFit='contain' src={SolarEnergy} alt='oval use case' />
                         </div>
@@ -61,7 +61,7 @@ export default function SlickSlider() {
 
 
                 <div>
-                    <div className="use-case-card cursor-pointer h-mcmendel-px-240 w-mcmendel-px-280 m-auto flex justify-center items-center bg-oval-use-case-3 transition-all hover:scale-105 rounded-lg">
+                    <div className="use-case-card cursor-pointer h-mcmendel-px-200 w-mcmendel-px-240 m-auto flex justify-center items-center bg-oval-use-case-3 transition-all hover:scale-105 rounded-lg">
                         <div className='h-36 bg-yellow-200 w-36 relative'>
                             <Image layout='fill' loading='lazy' objectFit='contain' src={SolarEnergy} alt='oval use case' />
                         </div>

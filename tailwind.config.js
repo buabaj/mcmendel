@@ -24,12 +24,12 @@ module.exports = {
       },
 
       height: {
-        'mcmendel-px-240': '240px',
-
+        'mcmendel-px-200': '200px',
+        
       },
 
       width: {
-        'mcmendel-px-280': '280px'
+        'mcmendel-px-240': '240px'
       },
 
       fontSize: {
