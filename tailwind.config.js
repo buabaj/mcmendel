@@ -11,6 +11,10 @@ module.exports = {
       ...theme('spacing'),
     }),
 
+    minWidth: (theme) => ({
+      ...theme('spacing'),
+    }),
+
     screens: {
       'xsm': '480px',
       ...screens

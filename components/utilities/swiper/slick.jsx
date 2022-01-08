@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
-import SolarEnergy from '../../../public/solar-energy.png';
+import SolarPanel from '../../../public/solar-panel.png';
+import WindEnergy from '../../../public/windmill.png';
+import BioEnergy from '../../../public/biomas-energy.png';
 
 
 import 'slick-carousel/slick/slick-theme.css';
@@ -41,9 +43,9 @@ export default function SlickSlider() {
                 ]}>
 
                 <div>
-                    <div className="use-case-card cursor-pointer h-mcmendel-px-200 w-mcmendel-px-240 m-auto flex justify-center items-center bg-oval-use-case-1 transition-all hover:scale-105 rounded-lg">
-                        <div className='h-36 bg-yellow-200 w-36 relative'>
-                            <Image layout='fill' loading='lazy' objectFit='contain' src={SolarEnergy} alt='oval use case' />
+                    <div className="use-case-card cursor-pointer h-mcmendel-px-200 w-mcmendel-px-240 m-auto flex justify-center items-center bg-gray-50 transition-all hover:scale-105 rounded-lg">
+                        <div className='h-36 w-36 relative'>
+                            <Image layout='fill' loading='lazy' objectFit='contain' src={SolarPanel} alt='solar energy' />
                         </div>
                     </div>
                     <h4 className='text-center mt-10 text-oval-faint-light text-oval-sm'>Solar Energy</h4>
@@ -51,9 +53,9 @@ export default function SlickSlider() {
 
 
                 <div>
-                    <div className="use-case-card cursor-pointer h-mcmendel-px-200 w-mcmendel-px-240 m-auto flex justify-center items-center bg-oval-use-case-2 transition-all hover:scale-105 rounded-lg">
-                        <div className='h-36 bg-yellow-200 w-36 relative'>
-                            <Image layout='fill' loading='lazy' objectFit='contain' src={SolarEnergy} alt='oval use case' />
+                    <div className="use-case-card cursor-pointer h-mcmendel-px-200 w-mcmendel-px-240 m-auto flex justify-center items-center bg-gray-50 transition-all hover:scale-105 rounded-lg">
+                        <div className='h-36 w-36 relative'>
+                            <Image layout='fill' loading='lazy' objectFit='contain' src={WindEnergy} alt='wind energy' />
                         </div>
                     </div>
                     <h4 className='text-center mt-10 text-oval-faint-light text-oval-sm'>Wind Energy</h4>
@@ -61,9 +63,9 @@ export default function SlickSlider() {
 
 
                 <div>
-                    <div className="use-case-card cursor-pointer h-mcmendel-px-200 w-mcmendel-px-240 m-auto flex justify-center items-center bg-oval-use-case-3 transition-all hover:scale-105 rounded-lg">
-                        <div className='h-36 bg-yellow-200 w-36 relative'>
-                            <Image layout='fill' loading='lazy' objectFit='contain' src={SolarEnergy} alt='oval use case' />
+                    <div className="use-case-card cursor-pointer h-mcmendel-px-200 w-mcmendel-px-240 m-auto flex justify-center items-center bg-gray-50 transition-all hover:scale-105 rounded-lg">
+                        <div className='h-36 w-36 relative'>
+                            <Image layout='fill' loading='lazy' objectFit='contain' src={BioEnergy} alt='bio energy' />
                         </div>
                     </div>
                     <h4 className='text-center mt-10 text-oval-faint-light text-oval-sm'>Biomass Energy</h4>

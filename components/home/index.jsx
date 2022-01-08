@@ -2,9 +2,10 @@ import Image from 'next/image'
 import React from 'react'
 import ArrowLeft from '../../public/left-arrow.svg'
 import ArrowRight from '../../public/right-arrow.svg'
-import SolarEnergy from '../../public/solar-energy.png';
+import GreenEnergy from '../../public/green-project.gif';
 import SlickSlider from '../utilities/swiper/slick';
 import { Slide, Fade } from 'react-awesome-reveal'
+import Link from 'next/link';
 
 function Index() {
     return (
@@ -131,13 +132,27 @@ function Index() {
                 </div>
             </section>
 
-            <section className="h-screen px-52 py-10 bg-green-50">
 
+            <section className="h-screen relative">
+                <Image layout='fill' src={GreenEnergy} alt="The KNUST Green Project" />
+                <div className="absolute w-full h-full z-20">
+                    <div className="flex justify-end">
+                        <div className="min-w-2/5 text-white mt-48 pr-5">
+                            <h1 className="text-4xl mb-2 font-bold text-bg-green-400">
+                                The KNUST Green Energy Project
+                            </h1>
+                            <Link href="#">
+                                <a className="font-semibold underline">Read more</a>
+                            </Link>
+                        </div>
+
+
+                    </div>
+                </div>
             </section>
 
-
-            <section className="h-screen px-52 py-10">
-                <h1 className="text-4xl mt-10 mb-5 text-bg-green-400">
+            <section className="min-h-screen px-52 py-10">
+                <h1 className="text-4xl mt-10 mb-5 text-bg-green-400 text-center">
                     The KNUST Green Project
                 </h1>
 
