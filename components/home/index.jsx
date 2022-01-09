@@ -134,7 +134,7 @@ function Index() {
             </section>
 
 
-            <section className="h-screen bg-[url('/green.jpg')] bg-cover bg-center bg-no-repeat">
+            <section className="h-screen bg-[url('/green.jpg')] bg-cover bg-center bg-no-repeat relative">
                 <div className="absolute w-full h-full bg-black opacity-50 z-20">
                     <div className="flex justify-center">
 
