@@ -54,7 +54,7 @@
     }
 
     p.lg{
-      @apply text-lg sm:text-mcmendel-rem-1.2 opacity-70 tracking-wide;
+      @apply text-lg sm:text-mcmendel-rem-1.2 text-justify opacity-70 tracking-wide;
     }
 
     footer{

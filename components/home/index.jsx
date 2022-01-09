@@ -58,7 +58,7 @@ function Index() {
                                     <h2 className="text-green-400 text-center sm:text-left">
                                         Vision
                                     </h2>
-                                    <p className="opacity-70">
+                                    <p className="opacity-70 text-justify">
                                         McMendel aspires to be a leading provider of quality and affordable clean energy in every nook and cranny of Ghana and Africa, and also help change the face of energy in Africa using renewable energy.
                                     </p>
                                 </div>
@@ -72,7 +72,7 @@ function Index() {
                                         Mission
                                     </h2>
 
-                                    <p className="opacity-70">
+                                    <p className="opacity-70 text-justify ">
                                         McMendel exists to be the trusted green energy provision partner, creating unmatched value by providing quality and affordable green energy to all and sundry.
                                     </p>
                                 </div>
