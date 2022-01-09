@@ -4,6 +4,9 @@ import ArrowLeft from '../../public/left-arrow.svg'
 import ArrowRight from '../../public/right-arrow.svg'
 import GreenEnergy from '../../public/green-project.gif';
 import SlickSlider from '../utilities/swiper/slick';
+import Renewable from '../../public/renewable.jpg';
+import Renewable2 from '../../public/renewable-2.jpg';
+
 import { Slide, Fade } from 'react-awesome-reveal'
 import Link from 'next/link';
 import { motion } from 'framer-motion';
@@ -12,27 +15,31 @@ function Index() {
     return (
         <div>
 
-            <section className="h-screen bg-green-50">
-                <nav>
-                    <div>About Us</div>
-                    <div>Objectives</div>
-                    <div>Mission</div>
-                    <div>Contact Us</div>
-                </nav>
+            <section className="h-screen relative">
+                <Image layout='fill' src={Renewable} alt="The KNUST Green Project" />
 
-                <div className="flex justify-center pt-32 flex-col items-center">
-                    <Slide direction='down'>
-                        <div>
-                            <div className="relative h-10 w-20 m-auto">
-                                <Image layout='fill' src={ArrowRight} alt="arrow right" />
+                <div className="absolute w-full h-full z-20">
+                    <nav>
+                        <div>About Us</div>
+                        <div>Objectives</div>
+                        <div>Mission</div>
+                        <div>Contact Us</div>
+                    </nav>
+
+                    <div className="flex justify-center pt-32 flex-col items-center">
+                        <Slide direction='down'>
+                            <div>
+                                <div className="relative h-10 w-20 m-auto">
+                                    <Image layout='fill' src={ArrowRight} alt="arrow right" />
+                                </div>
+                                <h1 className="main-header">McMendel</h1>
+                                <h2 className="sub-header">ENERGY</h2>
+                                <div className="relative h-10 w-20 m-auto">
+                                    <Image layout='fill' src={ArrowLeft} alt="arrow left" />
+                                </div>
                             </div>
-                            <h1 className="main-header">McMendel</h1>
-                            <h2 className="sub-header">ENERGY</h2>
-                            <div className="relative h-10 w-20 m-auto">
-                                <Image layout='fill' src={ArrowLeft} alt="arrow left" />
-                            </div>
-                        </div>
-                    </Slide>
+                        </Slide>
+                    </div>
                 </div>
             </section>
 
@@ -40,7 +47,7 @@ function Index() {
             <section className="padded">
                 <Slide direction='left'>
                     <h1 className="mb-5">
-                        About McMendel
+                        Who we are
                     </h1>
 
                     <p className="lg">
@@ -75,6 +82,7 @@ function Index() {
                                     <p className="opacity-70">
                                         McMendel exists to be the trusted green energy provision partner, creating unmatched value by providing quality and affordable green energy to all and sundry.
                                     </p>
+
                                 </div>
                             </motion.div>
                         </div>
@@ -86,26 +94,29 @@ function Index() {
 
 
             <section className="padded bg-green-50">
-                <h1 className="mb-5 text-bg-green-400">
-                    Our Objectives
-                </h1>
+                <div>
 
-                <Fade>
-                    <div className="flex flex-col md:flex-row my-16 gap-5 lg:gap-16">
+                    <h1 className="mb-5 text-bg-green-400">
+                        Our Objectives
+                    </h1>
 
-                        <motion.div whileHover={{ scale: 1.05 }} className="h-56 flex cursor-pointer justify-center items-center bg-white w-full px-10">
-                            Create an awareness on climate change and sustainable renewable sources of energy
-                        </motion.div>
+                    <Fade>
+                        <div className="flex flex-col md:flex-row my-16 gap-5 lg:gap-16">
 
-                        <motion.div whileHover={{ scale: 1.05 }} className="h-56 flex cursor-pointer justify-center items-center bg-white w-full px-10">
-                            Support innovations that make use of renewable and clean energy sources
-                        </motion.div>
+                            <motion.div whileHover={{ scale: 1.05 }} className="h-56 flex cursor-pointer justify-center items-center bg-white w-full px-10">
+                                Create an awareness on climate change and sustainable renewable sources of energy
+                            </motion.div>
 
-                        <motion.div whileHover={{ scale: 1.05 }} className="h-56 flex cursor-pointer justify-center items-center bg-white w-full px-10">
-                            Connect participants to an investment network to raise funds to scale-up their proposals
-                        </motion.div>
-                    </div>
-                </Fade>
+                            <motion.div whileHover={{ scale: 1.05 }} className="h-56 flex cursor-pointer justify-center items-center bg-white w-full px-10">
+                                Support innovations that make use of renewable and clean energy sources
+                            </motion.div>
+
+                            <motion.div whileHover={{ scale: 1.05 }} className="h-56 flex cursor-pointer justify-center items-center bg-white w-full px-10">
+                                Connect participants to an investment network to raise funds to scale-up their proposals
+                            </motion.div>
+                        </div>
+                    </Fade>
+                </div>
             </section>
 
 
@@ -129,18 +140,26 @@ function Index() {
             </section>
 
 
-            <section className="h-screen relative">
-                <Image layout='fill' src={GreenEnergy} alt="The KNUST Green Project" />
-                <div className="absolute w-full h-full z-20">
-                    <div className="flex justify-end">
-                        <div className="min-w-2/5 text-white mt-48 pr-5">
-                            <h1 className="mb-2 font-bold text-bg-green-400">
+            <section className="h-screen relative"
+                style={{
+                    backgroundImage: "url(" + "/green.jpg" + ")",
+                    backgroundPosition: 'center',
+                    backgroundSize: 'cover',
+                    backgroundRepeat: 'no-repeat'
+                }}
+            >
+                <div className="absolute w-full h-full bg-black opacity-50 z-20">
+                    <div className="flex justify-center">
+
+                        <div className="text-white text-opacity-100 mt-60">
+                            <h1 className="mb-2 text-5xl font-bold text-bg-green-400">
                                 The KNUST Green Energy Project
                             </h1>
                             <Link href="#">
-                                <a className="text-center block md:text-left font-semibold underline">Read more</a>
+                                <a className="text-center block font-semibold underline">Read more</a>
                             </Link>
                         </div>
+
                     </div>
                 </div>
             </section>
@@ -163,5 +182,13 @@ function Index() {
         </div>
     )
 }
+
+
+// style={{
+//     backgroundImage: "url(" + "/renewable-2.jpg" + ")",
+//     backgroundPosition: 'center',
+//     backgroundSize: 'cover',
+//     backgroundRepeat: 'no-repeat'
+// }}
 
 export default Index
