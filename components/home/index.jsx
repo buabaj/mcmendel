@@ -6,6 +6,7 @@ import GreenEnergy from '../../public/green-project.gif';
 import SlickSlider from '../utilities/swiper/slick';
 import { Slide, Fade } from 'react-awesome-reveal'
 import Link from 'next/link';
+import { motion } from 'framer-motion';
 
 function Index() {
     return (
@@ -52,26 +53,30 @@ function Index() {
                 <Fade>
                     <div className="flex flex-col md:flex-row justify-between my-16 gap-5 lg:gap-16">
                         <div className="w-full text-lg">
-                            <div className="card-about">
-                                <h2 className="text-green-400 text-center sm:text-left">
-                                    Vision
-                                </h2>
-                                <p className="opacity-70">
-                                    McMendel aspires to be a leading provider of quality and affordable clean energy in every nook and cranny of Ghana and Africa, and also help change the face of energy in Africa using renewable energy.
-                                </p>
-                            </div>
+                            <motion.div whileHover={{ scale: 1.05 }}>
+                                <div className="card-about cursor-pointer">
+                                    <h2 className="text-green-400 text-center sm:text-left">
+                                        Vision
+                                    </h2>
+                                    <p className="opacity-70">
+                                        McMendel aspires to be a leading provider of quality and affordable clean energy in every nook and cranny of Ghana and Africa, and also help change the face of energy in Africa using renewable energy.
+                                    </p>
+                                </div>
+                            </motion.div>
                         </div>
 
                         <div className="w-full">
-                            <div className="card-about">
-                                <h2 className="text-green-400 text-center sm:text-left">
-                                    Mission
-                                </h2>
+                            <motion.div whileHover={{ scale: 1.05 }}>
+                                <div className="card-about cursor-pointer">
+                                    <h2 className="text-green-400 text-center sm:text-left">
+                                        Mission
+                                    </h2>
 
-                                <p className="opacity-70">
-                                    McMendel exists to be the trusted green energy provision partner, creating unmatched value by providing quality and affordable green energy to all and sundry.
-                                </p>
-                            </div>
+                                    <p className="opacity-70">
+                                        McMendel exists to be the trusted green energy provision partner, creating unmatched value by providing quality and affordable green energy to all and sundry.
+                                    </p>
+                                </div>
+                            </motion.div>
                         </div>
                     </div>
                 </Fade>
@@ -79,7 +84,7 @@ function Index() {
             </section>
 
 
-            
+
             <section className="padded bg-green-50">
                 <h1 className="mb-5 text-bg-green-400">
                     Our Objectives
@@ -88,24 +93,24 @@ function Index() {
                 <Fade>
                     <div className="flex flex-col md:flex-row my-16 gap-5 lg:gap-16">
 
-                        <div className="h-56 flex justify-center items-center bg-white w-full px-10">
+                        <motion.div whileHover={{ scale: 1.05 }} className="h-56 flex cursor-pointer justify-center items-center bg-white w-full px-10">
                             Create an awareness on climate change and sustainable renewable sources of energy
-                        </div>
+                        </motion.div>
 
-                        <div className="h-56 flex justify-center items-center bg-white w-full px-10">
+                        <motion.div whileHover={{ scale: 1.05 }} className="h-56 flex cursor-pointer justify-center items-center bg-white w-full px-10">
                             Support innovations that make use of renewable and clean energy sources
-                        </div>
+                        </motion.div>
 
-                        <div className="h-56 flex justify-center items-center bg-white w-full px-10">
+                        <motion.div whileHover={{ scale: 1.05 }} className="h-56 flex cursor-pointer justify-center items-center bg-white w-full px-10">
                             Connect participants to an investment network to raise funds to scale-up their proposals
-                        </div>
+                        </motion.div>
                     </div>
                 </Fade>
             </section>
 
 
 
-                   
+
 
             <section className="padded">
                 <Slide direction='right'>
@@ -141,13 +146,15 @@ function Index() {
             </section>
 
             <section className="padded">
-                <h1 className="mt-10 mb-5 text-bg-green-400 text-center">
-                    The KNUST Green Energy Project
-                </h1>
+                <Fade>
+                    <h1 className="mt-10 mb-5 text-bg-green-400 text-center">
+                        The KNUST Green Energy Project
+                    </h1>
 
-                <p className="lg">
-                    The KNUST Green Energy Project is a proposal to implement renewable energy and energy efficiency installations to replace the high cost of power generation in KNUST. With the push towards sustainability and the need to reduce greenhouse gases, renewable energy installation on campus is worth the investment. The project will provide renewable energy and energy efficiency installations to harness energy and use it more efficiently. With declining prices of green energy technology, it is recommended that now is an excellent time to pursue large scale sustainable energy use in KNUST. Solar and other clean sources of energy technology have proven to be cost efficient and more sustainable for the environment as the sources of this power generation is readily available in Kumasi. Adopting clean energy technology on campus is a way to promote green activities.  Implementing more renewable energy initiatives on campus will also provide ample learning opportunities for the student body.  The university through the SRC can set examples for others to follow, not only by making renewable energy seem more accessible but by taking the lead in campus sustainability and also helping with the fight against global warming and climate change also.
-                </p>
+                    <p className="lg">
+                        The KNUST Green Energy Project is a proposal to implement renewable energy and energy efficiency installations to replace the high cost of power generation in KNUST. With the push towards sustainability and the need to reduce greenhouse gases, renewable energy installation on campus is worth the investment. The project will provide renewable energy and energy efficiency installations to harness energy and use it more efficiently. With declining prices of green energy technology, it is recommended that now is an excellent time to pursue large scale sustainable energy use in KNUST. Solar and other clean sources of energy technology have proven to be cost efficient and more sustainable for the environment as the sources of this power generation is readily available in Kumasi. Adopting clean energy technology on campus is a way to promote green activities.  Implementing more renewable energy initiatives on campus will also provide ample learning opportunities for the student body.  The university through the SRC can set examples for others to follow, not only by making renewable energy seem more accessible but by taking the lead in campus sustainability and also helping with the fight against global warming and climate change also.
+                    </p>
+                </Fade>
             </section>
 
             {/* <footer>
