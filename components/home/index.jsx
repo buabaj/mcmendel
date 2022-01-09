@@ -15,10 +15,8 @@ function Index() {
     return (
         <div>
 
-            <section className="h-screen relative">
-                <Image layout='fill' src={Renewable} alt="The KNUST Green Project" />
-
-                <div className="absolute w-full h-full z-20">
+            <section className="h-screen bg-[url('/renewable.jpg')] bg-cover bg-center bg-no-repeat">
+                <div>
                     <nav>
                         <div>About Us</div>
                         <div>Objectives</div>
@@ -26,7 +24,7 @@ function Index() {
                         <div>Contact Us</div>
                     </nav>
 
-                    <div className="flex justify-center pt-32 flex-col items-center">
+                    <div className="flex justify-center pt-64 md:pt-32 flex-col items-center">
                         <Slide direction='down'>
                             <div>
                                 <div className="relative h-10 w-20 m-auto">
@@ -126,10 +124,6 @@ function Index() {
                 </div>
             </section>
 
-
-
-
-
             <section className="padded">
                 <Slide direction='right'>
                     <h1 className="mb-5 text-bg-green-400">
@@ -147,14 +141,7 @@ function Index() {
             </section>
 
 
-            <section className="h-screen relative"
-                style={{
-                    backgroundImage: "url(" + "/green.jpg" + ")",
-                    backgroundPosition: 'center',
-                    backgroundSize: 'cover',
-                    backgroundRepeat: 'no-repeat'
-                }}
-            >
+            <section className="h-screen bg-[url('/green.jpg')] bg-cover bg-center bg-no-repeat relative">
                 <div className="absolute w-full h-full bg-black opacity-50 z-20">
                     <div className="flex justify-center">
 
