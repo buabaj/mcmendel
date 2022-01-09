@@ -15,10 +15,14 @@ function Index() {
     return (
         <div>
 
-            <section className="h-screen relative">
-                <Image layout='fill' src={Renewable} alt="The KNUST Green Project" />
-
-                <div className="absolute w-full h-full z-20">
+            <section className="h-screen"
+                style={{
+                    backgroundImage: "url(" + "/renewable.jpg" + ")",
+                    backgroundPosition: 'center',
+                    backgroundSize: 'cover',
+                    backgroundRepeat: 'no-repeat'
+                }}>
+                <div className="">
                     <nav>
                         <div>About Us</div>
                         <div>Objectives</div>
