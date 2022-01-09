@@ -82,7 +82,7 @@ export default function SlickSlider() {
                 <Slider swipe={false} arrows={false} asNavFor={nav2} ref={(slider1) => setNav1(slider1)}>
                     <div>
                         <h2 className="hidden sm:block">Solar Energy</h2>
-                        <p className='mt-5 text-oval-sm text-oval-faint-light text-center sm:text-left sm:text-oval-lg'>
+                        <p className='mt-5 text-oval-sm text-oval-faint-light text-justify sm:text-left sm:text-oval-lg'>
                             Solar resource is abundant, with Ghana&apos;s solar irradiation level ranging from approximately 4.4 to 6.0 kWh/m2/day, with sunshine duration of between 1,800 and 3,000 hours per annum. The highest irradiation levels occur in the northern half of the country.
                             However, at present, while the Government is piloting a number of initiatives on the deployment of solar energy systems, little has been done to exploit this resource, and the solar market remains relatively untapped. Furthermore, with approximately 20 percent of Ghana&apos;s population believed to be off-grid, the market for rural solar power - for electricity, lighting, water heating and drying - in particular, is huge.
                         </p>
@@ -90,14 +90,14 @@ export default function SlickSlider() {
 
                     <div>
                         <h2 className='hidden sm:block'>Wind Energy</h2>
-                        <p className='mt-5 text-oval-sm text-oval-faint-light text-center sm:text-left sm:text-oval-lg'>
+                        <p className='mt-5 text-oval-sm text-oval-faint-light text-justify sm:text-left sm:text-oval-lg'>
                             Ghana has moderate wind energy potential emanating from the country&apos;s annual average wind speed above 50m at 8m/s. The optimal wind resources are located along narrow stretches of Ghana&apos;s eastern coastline, in the hills around the Volta Lake and along the border with Togo.
                         </p>
                     </div>
 
                     <div>
                         <h2 className='hidden sm:block'>Biomass Energy</h2>
-                        <p className='mt-5 text-oval-sm text-oval-faint-light text-center sm:text-left sm:text-oval-lg'>
+                        <p className='mt-5 text-oval-sm text-oval-faint-light text-justify sm:text-left sm:text-oval-lg'>
                             Biomass is largely generated from horticulture (farm waste), food processing (corn cobs), animal farming manure, or human waste from sewage plants.
                             In 2010, Ghana introduced a bio energy policy that aims to substitute the country&apos;s petroleum oil by 20 percent by 2030, as well as promoting private sector participation in the bio-fuel industry.                        </p>
                     </div>
