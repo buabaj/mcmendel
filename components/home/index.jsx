@@ -15,13 +15,7 @@ function Index() {
     return (
         <div>
 
-            <section className="h-screen"
-                style={{
-                    backgroundImage: "url(" + "/renewable.jpg" + ")",
-                    backgroundPosition: 'center',
-                    backgroundSize: 'cover',
-                    backgroundRepeat: 'no-repeat'
-                }}>
+            <section className="h-screen bg-[url('/renewable.jpg')] bg-cover bg-center bg-no-repeat">
                 <div>
                     <nav>
                         <div>About Us</div>
@@ -123,10 +117,6 @@ function Index() {
                 </div>
             </section>
 
-
-
-
-
             <section className="padded">
                 <Slide direction='right'>
                     <h1 className="mb-5 text-bg-green-400">
@@ -144,14 +134,7 @@ function Index() {
             </section>
 
 
-            <section className="h-screen relative"
-                style={{
-                    backgroundImage: "url(" + "/green.jpg" + ")",
-                    backgroundPosition: 'center',
-                    backgroundSize: 'cover',
-                    backgroundRepeat: 'no-repeat'
-                }}
-            >
+            <section className="h-screen bg-[url('/green.jpg')] bg-cover bg-center bg-no-repeat">
                 <div className="absolute w-full h-full bg-black opacity-50 z-20">
                     <div className="flex justify-center">
 
