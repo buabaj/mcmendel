@@ -2,11 +2,7 @@ import Image from 'next/image'
 import React from 'react'
 import ArrowLeft from '../../public/left-arrow.svg'
 import ArrowRight from '../../public/right-arrow.svg'
-import GreenEnergy from '../../public/green-project.gif';
 import SlickSlider from '../utilities/swiper/slick';
-import Renewable from '../../public/renewable.jpg';
-import Renewable2 from '../../public/renewable-2.jpg';
-
 import { Slide, Fade } from 'react-awesome-reveal'
 import Link from 'next/link';
 import { motion } from 'framer-motion';
@@ -14,7 +10,6 @@ import { motion } from 'framer-motion';
 function Index() {
     return (
         <div>
-
             <section className="h-screen bg-[url('/renewable.jpg')] bg-cover bg-center bg-no-repeat">
                 <div>
                     <nav>
