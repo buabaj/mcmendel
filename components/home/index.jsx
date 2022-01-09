@@ -24,7 +24,7 @@ function Index() {
                         <div>Contact Us</div>
                     </nav>
 
-                    <div className="flex justify-center pt-32 flex-col items-center">
+                    <div className="flex justify-center pt-56 md:pt-32 flex-col items-center">
                         <Slide direction='down'>
                             <div>
                                 <div className="relative h-10 w-20 m-auto">
