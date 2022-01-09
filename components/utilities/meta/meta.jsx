@@ -7,15 +7,14 @@ const Meta = (props) => {
             <title>{props.title}</title>
             <meta name="viewport" content="initial-scale=1.0, width=device-width" />
             <meta property="og:title" content={props.title} />
-            <meta property="og:image" content="https://i.ibb.co/SXhcxLL/thumbnail.png" />
+            <meta property="og:image" content="https://i.ibb.co/1zNsK8G/mcmendel.jpg" />
             <meta property="twitter:card" content="summary_large_image" />
-            <meta property="twitter:creator" content="@ovalHQ" />
-            <meta property="twitter:title" content="Oval Data Wallet" />
-            <meta name="twitter:image" content="https://i.ibb.co/SXhcxLL/thumbnail.png" />
-            <meta property="twitter:description" content="Oval is a simple way to securely access and share your personal data across your favorite apps." />
-            <meta name="keywords" content="Oval, Data Wallet, Security, Reduce Onboarding drop-off, Secure data wallet, Financial Data, Employment Data, Business data, Payment data, Secure Connection" />
-            <meta name="description" content="Oval is a simple way to securely access and share your personal data across your favorite apps." />
-            <link rel='shortcut icon' href='/favicon.svg' />
+            <meta property="twitter:title" content={props.title} />
+            <meta name="twitter:image" content="https://i.ibb.co/1zNsK8G/mcmendel.jpg" />
+            <meta property="twitter:description" content="McMendel Energy is an energy provision and a global warming and climate change advocate company aspiring to change the face of energy using green energy. The Company is driven by its vision of making an impact in the energy sector of Ghana and Africa, which inspires, motivates and keeps the Firm focused on doing what really matters." />
+            <meta name="keywords" content="McMendel Energy, renewable energy, sustainability, Ghana clean energy, Ghana renewable energy, McMendel Ghana Energy, KNUST Green Project, McMendel KNUST, Sustainability in Ghana" />
+            <meta name="description" content="McMendel Energy is an energy provision and a global warming and climate change advocate company aspiring to change the face of energy using green energy. The Company is driven by its vision of making an impact in the energy sector of Ghana and Africa, which inspires, motivates and keeps the Firm focused on doing what really matters." />
+            <link rel='shortcut icon' href='/mcmendel.jpg' />
 
         </Head>
     );
