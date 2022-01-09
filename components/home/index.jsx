@@ -86,7 +86,14 @@ function Index() {
 
 
 
-            <section className="padded bg-green-50">
+            <section className="padded bg-green-50"
+                style={{
+                    backgroundImage: "url(" + "/sec.jpg" + ")",
+                    backgroundPosition: 'center',
+                    backgroundSize: 'cover',
+                    backgroundRepeat: 'no-repeat'
+                }}
+            >
                 <div>
 
                     <h1 className="mb-5 text-bg-green-400">
@@ -96,15 +103,15 @@ function Index() {
                     <Fade>
                         <div className="flex flex-col md:flex-row my-16 gap-5 lg:gap-16">
 
-                            <motion.div whileHover={{ scale: 1.05 }} className="h-56 flex cursor-pointer justify-center items-center bg-white w-full px-10">
+                            <motion.div whileHover={{ scale: 1.05 }} className="h-56 flex cursor-pointer justify-center items-center rounded-md bg-white w-full px-10">
                                 Create an awareness on climate change and sustainable renewable sources of energy
                             </motion.div>
 
-                            <motion.div whileHover={{ scale: 1.05 }} className="h-56 flex cursor-pointer justify-center items-center bg-white w-full px-10">
+                            <motion.div whileHover={{ scale: 1.05 }} className="h-56 flex cursor-pointer justify-center items-center rounded-md bg-white w-full px-10">
                                 Support innovations that make use of renewable and clean energy sources
                             </motion.div>
 
-                            <motion.div whileHover={{ scale: 1.05 }} className="h-56 flex cursor-pointer justify-center items-center bg-white w-full px-10">
+                            <motion.div whileHover={{ scale: 1.05 }} className="h-56 flex cursor-pointer justify-center items-center rounded-md bg-white w-full px-10">
                                 Connect participants to an investment network to raise funds to scale-up their proposals
                             </motion.div>
                         </div>
