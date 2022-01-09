@@ -22,7 +22,7 @@ function Index() {
                     backgroundSize: 'cover',
                     backgroundRepeat: 'no-repeat'
                 }}>
-                <div className="">
+                <div>
                     <nav>
                         <div>About Us</div>
                         <div>Objectives</div>
