@@ -10,7 +10,9 @@ import { motion } from 'framer-motion';
 function Index() {
     return (
         <div>
-            <section className="h-screen bg-[url('/renewable.jpg')] bg-cover bg-center bg-no-repeat">
+            <section className="h-screen bg-[url('/renewable-4.jpg')] bg-cover bg-center bg-no-repeat">
+                {/* <Image layout='fill' loading='lazy' objectFit='contain' src={BioEnergy} alt='bio energy' /> */}
+
                 <div>
                     <nav>
                         <div>About Us</div>
@@ -86,14 +88,7 @@ function Index() {
 
 
 
-            <section className="padded bg-green-50"
-                style={{
-                    backgroundImage: "url(" + "/sec.jpg" + ")",
-                    backgroundPosition: 'center',
-                    backgroundSize: 'cover',
-                    backgroundRepeat: 'no-repeat'
-                }}
-            >
+            <section className="padded bg-green-50 bg-[url('/sec.jpg')] bg-cover bg-center bg-no-repeat">
                 <div>
 
                     <h1 className="mb-5 text-bg-green-400">
