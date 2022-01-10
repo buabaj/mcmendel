@@ -30,7 +30,7 @@
 @layer base {
 
     nav {
-      @apply hidden md:flex w-full h-14 justify-center gap-10 items-center font-semibold sticky;
+      @apply hidden text-white md:flex w-full h-14 justify-center gap-10 items-center font-semibold sticky;
     }
     section.padded{
       @apply px-5 sm:px-16 lg:px-52 py-10;

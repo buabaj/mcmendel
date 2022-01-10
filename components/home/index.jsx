@@ -10,10 +10,10 @@ import { motion } from 'framer-motion';
 function Index() {
     return (
         <div>
-            <section className="h-screen bg-[url('/renewable-4.jpg')] bg-cover bg-center bg-no-repeat">
+            <section className="h-screen bg-[url('/renewable-5.jpg')] bg-cover bg-center bg-no-repeat">
                 {/* <Image layout='fill' loading='lazy' objectFit='contain' src={BioEnergy} alt='bio energy' /> */}
 
-                <div>
+                <div className="absolute w-full h-full bg-mcmendel-transparent z-20">
                     <nav>
                         <div>About Us</div>
                         <div>Objectives</div>
@@ -83,7 +83,6 @@ function Index() {
                         </div>
                     </div>
                 </Fade>
-
             </section>
 
 
@@ -166,13 +165,5 @@ function Index() {
         </div>
     )
 }
-
-
-// style={{
-//     backgroundImage: "url(" + "/renewable-2.jpg" + ")",
-//     backgroundPosition: 'center',
-//     backgroundSize: 'cover',
-//     backgroundRepeat: 'no-repeat'
-// }}
 
 export default Index
