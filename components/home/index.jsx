@@ -10,7 +10,7 @@ import { motion } from 'framer-motion';
 function Index() {
     return (
         <div>
-            <section className="h-screen bg-[url('/renewable-5.jpg')] bg-cover bg-center bg-no-repeat">
+            <section className="h-screen relative bg-[url('/renewable-5.jpg')] bg-cover bg-center bg-no-repeat">
                 {/* <Image layout='fill' loading='lazy' objectFit='contain' src={BioEnergy} alt='bio energy' /> */}
 
                 <div className="absolute w-full h-full bg-mcmendel-transparent z-20">
