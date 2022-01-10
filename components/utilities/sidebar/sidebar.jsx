@@ -30,7 +30,11 @@ const SideBar = (props) => {
 
                         <div>
                             <ul className='flex flex-col gap-10'>
-                                <li>
+                                <li>About Us</li>
+                                <li>Objectives</li>
+                                <li>Mission</li>
+                                <li>Contact Us</li>
+                                {/* <li>
                                     <Link href="/">
                                         <a className={`text-oval-px-24 font-bold ${router.pathname !== '/' && 'opacity-50'}`} onClick={() => props.setSidebar((sideBar) => !sideBar)}>
                                             Personal
@@ -44,12 +48,7 @@ const SideBar = (props) => {
                                             Business
                                         </a>
                                     </Link>
-                                </li>
-
-
-                                <li>
-                                    Contact us
-                                </li>
+                                </li> */}
                             </ul>
                         </div>
                     </motion.div>
