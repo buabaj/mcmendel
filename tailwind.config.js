@@ -25,12 +25,17 @@ module.exports = {
         'mcmendel-green-primary': '#AED652',
         'mcmendel-green': '#83c99e',
         'mcmendel-orange-primary': '#F78708',
-        'mcmendel-transparent':'rgba(0,0,0,0.5)'
+        'mcmendel-transparent': 'rgba(0,0,0,0.5)'
       },
 
       height: {
         'mcmendel-px-200': '200px',
-        
+
+      },
+
+      fontFamily: {
+        sans: ['Ubuntu', 'sans-serif'],
+        heading: ['Ubuntu', 'sans-serif']
       },
 
       width: {
