@@ -101,7 +101,7 @@ function Index() {
             >
                 <div>
 
-                    <h1 className="mb-5 text-bg-green-400">
+                    <h1 className="mb-5 text-black text-bg-green-400">
                         Our Objectives
                     </h1>
 

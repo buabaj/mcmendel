@@ -37,7 +37,7 @@
     }
     
     h1{
-      @apply text-center text-2xl sm:text-left md:text-3xl lg:text-4xl;
+      @apply text-center text-green-400 text-2xl sm:text-left md:text-3xl lg:text-4xl;
     }
 
     h1.main-header{
