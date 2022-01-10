@@ -84,6 +84,6 @@
     }
 
     .card-about{
-        @apply bg-green-50 py-5 min-h-60 px-10;
+        @apply bg-green-100 py-5 min-h-60 px-10;
     }
 }
