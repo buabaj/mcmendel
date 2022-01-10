@@ -69,7 +69,7 @@
 
     footer{
       height: 32vh;
-      @apply bg-green-50 w-full p-2;
+      @apply bg-green-100 w-full p-2;
     }
     
     /* 
