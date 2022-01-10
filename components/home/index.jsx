@@ -69,10 +69,10 @@ function Index() {
 
 
 
-            <section className="padded bg-green-50 bg-[url('/sec.jpg')] bg-cover bg-center bg-no-repeat">
+            <section className="padded bg-green-50 bg-[url('/gr.jpg')] bg-cover bg-center bg-no-repeat">
                 <div>
 
-                    <h1 className="mb-5 text-black text-bg-green-400">
+                    <h1 className="mb-5 text-black font-semibold text-bg-green-400">
                         Our Objectives
                     </h1>
 
