@@ -16,7 +16,7 @@ export default function SlickSlider() {
     return (
         <>
             <Slider
-                className='flex gap-10'
+                className='flex gap-10 card-slide'
                 asNavFor={nav1}
                 ref={(slider2) => setNav2(slider2)}
                 slidesToShow={3}
