@@ -1,47 +1,26 @@
 import Image from 'next/image'
 import React from 'react'
-import ArrowLeft from '../../public/left-arrow.svg'
-import ArrowRight from '../../public/right-arrow.svg'
-import GreenEnergy from '../../public/green-project.gif';
 import SlickSlider from '../utilities/swiper/slick';
-import Renewable from '../../public/renewable.jpg';
-import Renewable2 from '../../public/renewable-2.jpg';
-
 import { Slide, Fade } from 'react-awesome-reveal'
 import Link from 'next/link';
 import { motion } from 'framer-motion';
+import Nav from '../utilities/nav/nav';
+import Jumbotron from '../utilities/swiper/jumbotron';
 
 function Index() {
+
+    const settings = {
+        dots: true,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 1,
+        slidesToScroll: 1
+    };
+
     return (
         <div>
 
-            <section className="h-screen bg-[url('/renewable.jpg')] bg-cover bg-center bg-no-repeat">
-                <div>
-                    <nav>
-                        <div>About Us</div>
-                        <div>Objectives</div>
-                        <div>Mission</div>
-                        <div>Contact Us</div>
-                    </nav>
-
-                    <div className="flex justify-center pt-64 md:pt-32 flex-col items-center">
-                        <Slide direction='down'>
-                            <div>
-                                <div className="relative h-10 w-20 m-auto">
-                                    <Image layout='fill' src={ArrowRight} alt="arrow right" />
-                                </div>
-                                <h1 className="main-header">McMendel</h1>
-                                <h2 className="sub-header">ENERGY</h2>
-                                <div className="relative h-10 w-20 m-auto">
-                                    <Image layout='fill' src={ArrowLeft} alt="arrow left" />
-                                </div>
-                            </div>
-                        </Slide>
-                    </div>
-                </div>
-            </section>
-
-
+            <Jumbotron />
             <section className="padded">
                 <Slide direction='left'>
                     <h1 className="mb-5">
@@ -86,19 +65,11 @@ function Index() {
                         </div>
                     </div>
                 </Fade>
-
             </section>
 
 
 
-            <section className="padded bg-green-50"
-                style={{
-                    backgroundImage: "url(" + "/sec.jpg" + ")",
-                    backgroundPosition: 'center',
-                    backgroundSize: 'cover',
-                    backgroundRepeat: 'no-repeat'
-                }}
-            >
+            <section className="padded bg-green-50 bg-[url('/sec.jpg')] bg-cover bg-center bg-no-repeat">
                 <div>
 
                     <h1 className="mb-5 text-black text-bg-green-400">
@@ -170,19 +141,26 @@ function Index() {
                 </Fade>
             </section>
 
-            {/* <footer>
+            <footer className="flex flex-col justify-between">
+                <div className="flex justify-center gap-60">
+                    <div>
+                        <h4 className="font-semibold">
+                            Socials
+                        </h4>
+                    </div>
 
-            </footer> */}
+                    <div>
+                        <h4 className="font-semibold">
+                            Socials
+                        </h4>
+                    </div>
+                </div>
+                <div>
+                    &copy; McMendel {new Date().getFullYear().toString()}, <span>All rights reserved</span>
+                </div>
+            </footer>
         </div>
     )
 }
-
-
-// style={{
-//     backgroundImage: "url(" + "/renewable-2.jpg" + ")",
-//     backgroundPosition: 'center',
-//     backgroundSize: 'cover',
-//     backgroundRepeat: 'no-repeat'
-// }}
 
 export default Index

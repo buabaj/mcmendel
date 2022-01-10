@@ -24,7 +24,8 @@ module.exports = {
       colors: {
         'mcmendel-green-primary': '#AED652',
         'mcmendel-green': '#83c99e',
-        'mcmendel-orange-primary': '#F78708'
+        'mcmendel-orange-primary': '#F78708',
+        'mcmendel-transparent':'rgba(0,0,0,0.5)'
       },
 
       height: {

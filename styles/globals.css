@@ -17,7 +17,11 @@
     border: 2px solid #AED652;
 }
 
-.slick-dots {
+.jumbotron .slick-dots{
+  bottom: 70px !important;
+}
+
+.card-slide .slick-dots {
   bottom: 280px !important;
 }
 
@@ -30,7 +34,7 @@
 @layer base {
 
     nav {
-      @apply hidden md:flex w-full h-14 justify-center gap-10 items-center font-semibold sticky;
+      @apply hidden text-white md:flex w-full h-14 justify-center gap-10 items-center font-semibold;
     }
     section.padded{
       @apply px-5 sm:px-16 lg:px-52 py-10;
@@ -58,8 +62,8 @@
     }
 
     footer{
-      height: 50vh;
-      @apply bg-green-50 w-full;
+      height: 32vh;
+      @apply bg-green-50 w-full p-2;
     }
     
     /* 
