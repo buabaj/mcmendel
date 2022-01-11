@@ -1,13 +1,15 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from "react-scroll";
 import Image from 'next/image';
 import { FaBars as Hamburger } from 'react-icons/fa';
+import { IoChevronDownOutline as ArrowDown } from 'react-icons/io5'
 import { useRouter } from 'next/router';
+import Dropdown from './dropdown';
 
 
 
 const Nav = (props) => {
-    const router = useRouter();
+    const [dropdown, setDropdown] = useState(false);
 
     const [scrollNav, setScrollNav] = React.useState(false);
 
@@ -19,11 +21,27 @@ const Nav = (props) => {
         }
     }
 
+    const hideDropdown = () => {
+        setDropdown(false);
+    }
+
     React.useEffect(() => {
         window.addEventListener('scroll', changeNav);
-
         return () => window.removeEventListener('scroll', changeNav);
     }, []);
+
+    React.useEffect(() => {
+        window.addEventListener('mouseenter', hideDropdown);
+        return () => window.removeEventListener('scroll', hideDropdown);
+    }, []);
+
+    const onMouseEnter = () => {
+        setDropdown(true);
+    }
+
+    const onMouseLeave = () => {
+        setDropdown(false);
+    }
 
 
     return (
@@ -32,12 +50,18 @@ const Nav = (props) => {
             <nav>
                 <Link to="objectives" className="cursor-pointer" offset={-55} smooth duration={1000}> <span>Our Objectives</span> </Link>
 
-                <Link to="green-project" className="cursor-pointer" offset={-55} smooth duration={1000}>
-                    <span>
-                        Projects
-                    </span>
-                </Link>
-                
+                <div onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave} className="relative">
+                    <div className="cursor-pointer flex gap-1">
+                        <span>
+                            Projects
+                        </span>
+                        <ArrowDown className="relative top-1" />
+                    </div>
+                    <div id="dropdown" className={`min-h-40 min-w-52 rounded-sm absolute top-6 ${!dropdown ? "hidden" : "block"}`}>
+                        <Dropdown />
+                    </div>
+                </div>
+
                 <Link to="about-us" className="cursor-pointer" offset={-55} smooth duration={1000}> <span>About Us</span> </Link>
                 <Link to="contact" className="cursor-pointer" offset={-55} smooth duration={1000}> <span>Contact Us</span> </Link>
             </nav>

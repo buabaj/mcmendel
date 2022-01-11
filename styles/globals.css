@@ -57,6 +57,9 @@
       @apply font-sans;
     }
     
+    li.dropdown-menu-item{
+      @apply border-b text-sm p-2 hover:bg-green-600 cursor-pointer;
+    }
 
 
     h2{
