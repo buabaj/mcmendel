@@ -3,6 +3,7 @@ import React from 'react'
 import SlickSlider from '../utilities/swiper/slick';
 import { Slide, Fade } from 'react-awesome-reveal'
 import { Link } from 'react-scroll';
+import { Link as NextLink } from 'next/link';
 import { motion } from 'framer-motion';
 import Nav from '../utilities/nav/nav';
 import Jumbotron from '../utilities/swiper/jumbotron';
@@ -16,6 +17,14 @@ function Index() {
         slidesToShow: 1,
         slidesToScroll: 1
     };
+
+    const mailto = () => {
+        document.location.href = "mailto:benacq44@gmail.com?subject=Mail from Our Site";
+    }
+
+    const goTo = (location) => {
+        document.location.href = `https://${location}`;
+    }
 
     return (
         <div>
@@ -142,7 +151,7 @@ function Index() {
 
             <footer id="contact" className="flex flex-col items-center justify-between">
                 <div className="">
-                    <button className=" bg-green-500 mt-20 hover:bg-green-700 text-white text-sm outline-none py-2 px-10 rounded active:scale-95">
+                    <button onClick={mailto} className=" bg-green-500 mt-20 hover:bg-green-700 text-white text-sm outline-none py-2 px-10 rounded active:scale-95">
                         Contact Us
                     </button>
                 </div>
@@ -152,29 +161,33 @@ function Index() {
                         <div className="flex gap-20 text-gray-700">
                             <div className="flex flex-col gap-5">
                                 <div><Image height="20" width="20" layout="fixed" src="/instagram.png" alt="icon" />
-                                    <span className="relative left-2 -top-1">
+                                    <span onClick={() => goTo("www.instagram.com/mcmendel_energy/")} className="text-blue-700 relative cursor-pointer left-2 -top-1">
                                         Instagram
                                     </span>
                                 </div>
 
+
+
                                 <div><Image height="20" width="20" layout="fixed" src="/twitter.png" alt="icon" />
-                                    <span className="relative left-2 -top-1">
+                                    <span onClick={() => goTo("twitter.com/mcmendel_energy")} className="text-blue-700 relative cursor-pointer left-2 -top-1">
                                         Twitter
                                     </span>
                                 </div>
+
                             </div>
 
 
                             <div className="flex flex-col gap-5">
-                                <div><Image height="20" width="20" layout="fixed" src="/whatsapp.png" alt="icon" />
-                                    <span className="relative left-2 -top-1">
-                                        WhatsApp
+                                <div><Image height="20" width="20" layout="fixed" src="/gmail.png" alt="icon" />
+                                    <span onClick={mailto} className="relative text-blue-700 cursor-pointer tracking-widest left-2 -top-1">
+                                        info@mcmendelenergy
                                     </span>
                                 </div>
 
-                                <div><Image height="20" width="20" layout="fixed" src="/gmail.png" alt="icon" />
-                                    <span className="relative tracking-widest left-2 -top-1">
-                                        Email
+
+                                <div><Image height="20" width="20" layout="fixed" src="/whatsapp.png" alt="icon" />
+                                    <span onClick={() => goTo("wa.me/+233209126193")} className="text-blue-700 relative cursor-pointer left-2 -top-1">
+                                        +233209126193
                                     </span>
                                 </div>
                             </div>

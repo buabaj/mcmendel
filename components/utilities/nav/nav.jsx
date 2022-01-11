@@ -29,10 +29,9 @@ const Nav = (props) => {
     return (
 
         <div className={`px-5 z-50 p-0 ${!scrollNav ? 'bg-transparent' : ' bg-green-500'} fixed top-0 transition-all w-full`}>
-
             <nav>
                 <Link to="objectives" className="cursor-pointer" offset={-55} smooth duration={1000}> <span>Our Objectives</span> </Link>
-                <Link to="green-project" className="cursor-pointer" offset={-55} smooth duration={1000}> <span>The Green Project</span> </Link>
+                <Link to="green-project" className="cursor-pointer" offset={-55} smooth duration={1000}> <span>The KNUST Green Energy Project</span> </Link>
                 <Link to="about-us" className="cursor-pointer" offset={-55} smooth duration={1000}> <span>About Us</span> </Link>
                 <Link to="contact" className="cursor-pointer" offset={-55} smooth duration={1000}> <span>Contact Us</span> </Link>
             </nav>
@@ -42,7 +41,6 @@ const Nav = (props) => {
                     <Hamburger color='white' size={20} />
                 </span>
             </div>
-
         </div>
     )
 }

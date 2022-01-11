@@ -50,7 +50,7 @@ function Jumbotron() {
                 </section>
 
 
-                <section className="h-screen relative bg-[url('/renewable-3.jpg')] bg-cover bg-center bg-no-repeat">
+                <section className="h-screen relative bg-[url('/renewable.jpg')] bg-cover bg-center bg-no-repeat">
                     <div className="absolute w-full h-full flex items-center justify-center bg-mcmendel-transparent z-20">
                         <div className="">
                             <div>

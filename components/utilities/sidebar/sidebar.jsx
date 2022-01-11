@@ -35,7 +35,7 @@ const SideBar = (props) => {
                                 </li>
 
                                 <li>
-                                    <Link onClick={() => props.setSidebar(false)} to="green-project" className="cursor-pointer" offset={40} smooth duration={1000}> <span>The Green Project</span> </Link>
+                                    <Link onClick={() => props.setSidebar(false)} to="green-project" className="cursor-pointer" offset={40} smooth duration={1000}> <span>The KNUST Green Energy Project</span> </Link>
                                 </li>
                                 <li>
                                     <Link onClick={() => props.setSidebar(false)} to="about-us" className="cursor-pointer" offset={-125} smooth duration={1000}> <span>About Us</span> </Link>
