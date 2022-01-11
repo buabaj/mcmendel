@@ -53,7 +53,7 @@ const SideBar = (props) => {
                                             <ArrowDown className="relative top-1" />
                                         </div>
                                         <div id="dropdown" className={`rounded-sm min-w-52 right-0 top-6 absolute ${!dropdown ? "hidden" : "block"}`}>
-                                            <Dropdown setSidebar={props.setSidebar} />
+                                            <Dropdown setDropdown={setDropdown} setSidebar={props.setSidebar} />
                                         </div>
                                     </div>
 
