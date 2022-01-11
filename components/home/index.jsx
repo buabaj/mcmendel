@@ -189,7 +189,7 @@ function Index() {
                             <div className="flex flex-col gap-5">
                                 <div><Image height="20" width="20" layout="fixed" src="/gmail.png" alt="icon" />
                                     <span onClick={mailto} className="relative text-blue-700 cursor-pointer tracking-widest left-2 -top-1">
-                                        info@mcmendelenergy
+                                        info@mcmendelenergy.com
                                     </span>
                                 </div>
 
