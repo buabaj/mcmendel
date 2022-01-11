@@ -56,7 +56,7 @@ function Jumbotron() {
 
                 <section className="h-screen relative bg-[url('/renewable.jpg')] bg-cover bg-center bg-no-repeat">
                     <div className="absolute w-full h-full flex items-center justify-center bg-mcmendel-transparent z-20">
-                        <div className="">
+                        <div className='-mt-40 md:mt-0'>
                             <div>
                                 <div className="relative h-10 w-20 m-auto">
                                     <Image layout='fill' src={"/right-arrow.svg"} alt="arrow right" />
@@ -74,7 +74,7 @@ function Jumbotron() {
 
                 <section className="h-screen relative bg-[url('/renewable-1.jpg')] bg-cover bg-center bg-no-repeat">
                     <div className="absolute w-full h-full flex items-center justify-center bg-mcmendel-transparent z-20">
-                        <div className="">
+                        <div className='-mt-40 md:mt-0'>
                             <div>
                                 <div className="relative h-10 w-20 m-auto">
                                     <Image layout='fill' src={"/right-arrow.svg"} alt="arrow right" />
