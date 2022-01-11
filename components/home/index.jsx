@@ -170,16 +170,17 @@ function Index() {
                     <div className="text-center mb-16">
                         <div className="flex gap-14 text-gray-700">
                             <div className="flex flex-col gap-5">
-                                <div><Image height="20" width="20" layout="fixed" src="/instagram.png" alt="icon" />
-                                    <span onClick={() => goTo("www.instagram.com/mcmendel_energy/")} className="text-blue-700 relative cursor-pointer left-2 -top-1">
+                                
+                                <div onClick={() => goTo("www.instagram.com/mcmendel_energy/")}><Image height="20" width="20" layout="fixed" src="/instagram.png" alt="icon" />
+                                    <span className="text-blue-700 relative cursor-pointer left-2 -top-1">
                                         Instagram
                                     </span>
                                 </div>
 
 
 
-                                <div><Image height="20" width="20" layout="fixed" src="/twitter.png" alt="icon" />
-                                    <span onClick={() => goTo("twitter.com/mcmendel_energy")} className="text-blue-700 relative cursor-pointer left-2 -top-1">
+                                <div onClick={() => goTo("twitter.com/mcmendel_energy")}><Image height="20" width="20" layout="fixed" src="/twitter.png" alt="icon" />
+                                    <span className="text-blue-700 relative cursor-pointer left-2 -top-1">
                                         Twitter
                                     </span>
                                 </div>
@@ -188,15 +189,15 @@ function Index() {
 
 
                             <div className="flex flex-col gap-5">
-                                <div><Image height="20" width="20" layout="fixed" src="/gmail.png" alt="icon" />
-                                    <span onClick={mailto} className="relative text-blue-700 cursor-pointer tracking-widest left-2 -top-1">
+                                <div onClick={mailto}><Image height="20" width="20" layout="fixed" src="/gmail.png" alt="icon" />
+                                    <span  className="relative text-blue-700 cursor-pointer tracking-widest left-2 -top-1">
                                         info@mcmendelenergy.com
                                     </span>
                                 </div>
 
 
-                                <div><Image height="20" width="20" layout="fixed" src="/whatsapp.png" alt="icon" />
-                                    <span onClick={() => goTo("wa.me/+233209126193")} className="text-blue-700 relative cursor-pointer left-2 -top-1">
+                                <div onClick={() => goTo("wa.me/+233209126193")} ><Image height="20" width="20" layout="fixed" src="/whatsapp.png" alt="icon" />
+                                    <span className="text-blue-700 relative cursor-pointer left-2 -top-1">
                                         +233209126193
                                     </span>
                                 </div>
