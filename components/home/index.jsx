@@ -19,7 +19,7 @@ function Index() {
     };
 
     const mailto = () => {
-        document.location.href = "mailto:benacq44@gmail.com?subject=Mail from Our Site";
+        document.location.href = "mailto:info@mcmendelenergy.com?subject=Hi McMendel Energy";
     }
 
     const goTo = (location) => {
