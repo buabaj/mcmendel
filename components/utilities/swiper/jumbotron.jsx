@@ -18,7 +18,7 @@ function Jumbotron() {
         easing: 'cubic-bezier',
         autoplaySpeed: 5000,
         pauseOnHover: false,
-        // autoplay: true,
+        autoplay: true,
         arrows: false,
         slidesToShow: 1,
         slidesToScroll: 1
