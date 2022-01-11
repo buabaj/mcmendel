@@ -21,19 +21,12 @@ const Nav = (props) => {
         }
     }
 
-    const hideDropdown = () => {
-        setDropdown(false);
-    }
 
     React.useEffect(() => {
         window.addEventListener('scroll', changeNav);
         return () => window.removeEventListener('scroll', changeNav);
     }, []);
 
-    React.useEffect(() => {
-        window.addEventListener('mouseenter', hideDropdown);
-        return () => window.removeEventListener('scroll', hideDropdown);
-    }, []);
 
     const onMouseEnter = () => {
         setDropdown(true);
@@ -58,7 +51,7 @@ const Nav = (props) => {
                         <ArrowDown className="relative top-1" />
                     </div>
                     <div id="dropdown" className={`min-h-40 min-w-52 rounded-sm absolute top-6 ${!dropdown ? "hidden" : "block"}`}>
-                        <Dropdown />
+                        <Dropdown setDropdown={setDropdown}/>
                     </div>
                 </div>
 
