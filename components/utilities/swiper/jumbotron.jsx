@@ -18,7 +18,7 @@ function Jumbotron() {
         easing: 'cubic-bezier',
         autoplaySpeed: 5000,
         pauseOnHover: false,
-        autoplay: true,
+        // autoplay: true,
         arrows: false,
         slidesToShow: 1,
         slidesToScroll: 1
@@ -35,9 +35,9 @@ function Jumbotron() {
             <Slider className="jumbotron" {...settings}>
                 <section className="h-screen relative bg-[url('/renewable-5.jpg')] bg-cover bg-center bg-no-repeat">
                     <div className="absolute w-full h-full flex items-center justify-center bg-mcmendel-transparent z-20">
-                        <div>
+                        <div className='-mt-40 md:mt-0'>
                             <Slide direction="down">
-                                <div>
+                                <div >
                                     <div className="relative h-10 w-20 m-auto">
                                         <Image layout='fill' src={"/right-arrow.svg"} alt="arrow right" />
                                     </div>
