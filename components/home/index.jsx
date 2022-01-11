@@ -167,7 +167,7 @@ function Index() {
 
                 <div>
                     <div className="text-center mb-16">
-                        <div className="flex gap-20 text-gray-700">
+                        <div className="flex gap-14 text-gray-700">
                             <div className="flex flex-col gap-5">
                                 <div><Image height="20" width="20" layout="fixed" src="/instagram.png" alt="icon" />
                                     <span onClick={() => goTo("www.instagram.com/mcmendel_energy/")} className="text-blue-700 relative cursor-pointer left-2 -top-1">
