@@ -170,7 +170,7 @@ function Index() {
                     <div className="text-center mb-16">
                         <div className="flex gap-14 text-gray-700">
                             <div className="flex flex-col gap-5">
-                                
+
                                 <div onClick={() => goTo("www.instagram.com/mcmendel_energy/")}><Image height="20" width="20" layout="fixed" src="/instagram.png" alt="icon" />
                                     <span className="text-blue-700 relative cursor-pointer left-2 -top-1">
                                         Instagram
@@ -184,17 +184,14 @@ function Index() {
                                         Twitter
                                     </span>
                                 </div>
-
                             </div>
-
 
                             <div className="flex flex-col gap-5">
                                 <div onClick={mailto}><Image height="20" width="20" layout="fixed" src="/gmail.png" alt="icon" />
-                                    <span  className="relative text-blue-700 cursor-pointer tracking-widest left-2 -top-1">
+                                    <span className="relative text-blue-700 cursor-pointer tracking-widest left-2 -top-1">
                                         info@mcmendelenergy.com
                                     </span>
                                 </div>
-
 
                                 <div onClick={() => goTo("wa.me/+233209126193")} ><Image height="20" width="20" layout="fixed" src="/whatsapp.png" alt="icon" />
                                     <span className="text-blue-700 relative cursor-pointer left-2 -top-1">

@@ -14,8 +14,8 @@ function Jumbotron() {
         infinite: true,
         speed: 500,
         fade: true,
-        speed:2000,
-        easing:'cubic-bezier',
+        speed: 2000,
+        easing: 'cubic-bezier',
         autoplaySpeed: 5000,
         pauseOnHover: false,
         autoplay: true,
@@ -35,17 +35,18 @@ function Jumbotron() {
             <Slider className="jumbotron" {...settings}>
                 <section className="h-screen relative bg-[url('/renewable-5.jpg')] bg-cover bg-center bg-no-repeat">
                     <div className="absolute w-full h-full flex items-center justify-center bg-mcmendel-transparent z-20">
-                        <div className="">
+                        <div>
                             <Slide direction="down">
                                 <div>
                                     <div className="relative h-10 w-20 m-auto">
                                         <Image layout='fill' src={"/right-arrow.svg"} alt="arrow right" />
                                     </div>
-                                    <h1 className="main-header">McMendel</h1>
+                                    <h1 className="main-header text-center">McMendel</h1>
                                     <h2 className="sub-header">ENERGY</h2>
                                     <div className="relative h-10 w-20 m-auto">
                                         <Image layout='fill' src={"/left-arrow.svg"} alt="arrow left" />
                                     </div>
+                                    <h1 className="px-14 text-white">Changing the face of energy in Africa</h1>
                                 </div>
                             </Slide>
                         </div>
@@ -60,7 +61,7 @@ function Jumbotron() {
                                 <div className="relative h-10 w-20 m-auto">
                                     <Image layout='fill' src={"/right-arrow.svg"} alt="arrow right" />
                                 </div>
-                                <h1 className="main-header">McMendel</h1>
+                                <h1 className="main-header text-center">McMendel</h1>
                                 <h2 className="sub-header">ENERGY</h2>
                                 <div className="relative h-10 w-20 m-auto">
                                     <Image layout='fill' src={"/left-arrow.svg"} alt="arrow left" />
@@ -78,7 +79,7 @@ function Jumbotron() {
                                 <div className="relative h-10 w-20 m-auto">
                                     <Image layout='fill' src={"/right-arrow.svg"} alt="arrow right" />
                                 </div>
-                                <h1 className="main-header">McMendel</h1>
+                                <h1 className="main-header text-center">McMendel</h1>
                                 <h2 className="sub-header">ENERGY</h2>
                                 <div className="relative h-10 w-20 m-auto">
                                     <Image layout='fill' src={"/left-arrow.svg"} alt="arrow left" />
