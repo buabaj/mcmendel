@@ -159,11 +159,12 @@ function Index() {
             </section>
 
             <footer id="contact" className="flex flex-col items-center justify-between">
-                <div className="">
-                    <button onClick={mailto} className=" bg-green-500 mt-20 hover:bg-green-700 text-white text-sm outline-none py-2 px-10 rounded active:scale-95">
+                <div>
+                    <button onClick={mailto} className=" bg-green-500 mt-6 hover:bg-green-700 text-white text-sm outline-none py-2 px-10 rounded active:scale-95">
                         Contact Us
                     </button>
                 </div>
+
 
                 <div>
                     <div className="text-center mb-16">

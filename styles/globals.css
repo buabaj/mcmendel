@@ -68,7 +68,7 @@
     }
 
     footer{
-      height: 72vh;
+      height: 52vh;
       @apply bg-green-100 w-full p-5;
     }
     
