@@ -46,7 +46,7 @@ function Jumbotron() {
                                     <div className="relative h-10 w-20 m-auto">
                                         <Image layout='fill' src={"/left-arrow.svg"} alt="arrow left" />
                                     </div>
-                                    <h1 className="px-14 text-white">Changing the face of energy in Africa</h1>
+                                    <h1 className="px-14 text-white mt-5">Changing the face of energy in Africa</h1>
                                 </div>
                             </Slide>
                         </div>
