@@ -1,62 +1,48 @@
 import React from 'react';
-import Link from 'next/link';
+import { Link } from "react-scroll";
 import Image from 'next/image';
+import { FaBars as Hamburger } from 'react-icons/fa';
 import { useRouter } from 'next/router';
 
 
 
 const Nav = (props) => {
     const router = useRouter();
+
+    const [scrollNav, setScrollNav] = React.useState(false);
+
+    const changeNav = () => {
+        if (window.scrollY >= window.innerHeight - 40) {
+            setScrollNav(true);
+        } else {
+            setScrollNav(false);
+        }
+    }
+
+    React.useEffect(() => {
+        window.addEventListener('scroll', changeNav);
+
+        return () => window.removeEventListener('scroll', changeNav);
+    }, []);
+
+
     return (
 
-        <div className='text-white h-14 bg-mcmendel-green h-oval-px-60 px-5 flex items-center z-10 backdrop-filter backdrop-blur fixed left-0 right-0 top-0
-                        md:h-oval-px-70 md:px-16
-                        lg:h-oval-px-90 lg:px-24'>
-
-            <nav className='w-full flex justify-between'>
-                <div className="h-5 w-20 relative">
-                    <Image layout='fill' objectFit='contain' src='/images/oval-logo.svg' alt='' />
-                </div>
-
-
-                <div className="hidden md:flex lg:gap-28 md:gap-16">
-                    <div>
-                        <Link href="/">
-                            <a className={`lg:text-oval-lg md:text-oval-md ${router.pathname !== '/' && 'opacity-50'}`}>Personal</a>
-                        </Link>
-                    </div>
-
-                    <div>
-                        <Link href="/business">
-                            <a className={`lg:text-oval-lg md:text-oval-md ${router.pathname !== '/business' && 'opacity-50'}`}>Business</a>
-                        </Link>
-                    </div>
-                </div>
-
-
-                <div>
-                    <div className="md:hidden hover:cursor-pointer">
-                        {router.pathname === '/' ? (<>
-                            <Link href="/business">
-                                <a className={'lg:text-oval-lg md:text-oval-md'}>Business</a>
-                            </Link>
-                        </>) : <>
-                            <Link href="/">
-                                <a className={'lg:text-oval-lg md:text-oval-md '}>Personal</a>
-                            </Link>
-                        </>}
-                    </div>
-
-                    <button onClick={() => props.showModal(true)} className="btn-nav text-oval-sm hidden md:block">
-                        Contact Us
-                    </button>
-                </div>
-
+        <div className={`px-5 z-50 p-0 ${!scrollNav ? 'bg-transparent' : ' bg-green-500'} fixed top-0 transition-all w-full`}>
+            <nav>
+                <Link to="objectives" className="cursor-pointer" offset={-55} smooth duration={1000}> <span>Our Objectives</span> </Link>
+                <Link to="green-project" className="cursor-pointer" offset={-55} smooth duration={1000}> <span>The KNUST Green Energy Project</span> </Link>
+                <Link to="about-us" className="cursor-pointer" offset={-55} smooth duration={1000}> <span>About Us</span> </Link>
+                <Link to="contact" className="cursor-pointer" offset={-55} smooth duration={1000}> <span>Contact Us</span> </Link>
             </nav>
+
+            <div className='flex justify-end p-3 md:hidden'>
+                <span className="hover:cursor-pointer" onClick={() => props.setSidebar((isOpen) => !isOpen)}>
+                    <Hamburger color='white' size={20} />
+                </span>
+            </div>
         </div>
     )
 }
 
-export default Nav
-
-
+export default Nav;
