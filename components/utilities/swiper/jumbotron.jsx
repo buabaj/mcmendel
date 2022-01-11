@@ -5,8 +5,6 @@ import "slick-carousel/slick/slick-theme.css";
 import Image from 'next/image';
 import { Slide } from 'react-awesome-reveal';
 
-// import ArrowLeft from '../../public/left-arrow.svg'
-// import ArrowRight from '../../public/right-arrow.svg'
 function Jumbotron() {
 
     const settings = {
@@ -18,7 +16,7 @@ function Jumbotron() {
         easing: 'cubic-bezier',
         autoplaySpeed: 5000,
         pauseOnHover: false,
-        autoplay: true,
+        // autoplay: true,
         arrows: false,
         slidesToShow: 1,
         slidesToScroll: 1
@@ -46,7 +44,7 @@ function Jumbotron() {
                                     <div className="relative h-10 w-20 m-auto">
                                         <Image layout='fill' src={"/left-arrow.svg"} alt="arrow left" />
                                     </div>
-                                    <h1 className="px-14 text-white mt-5">Changing the face of energy in Africa</h1>
+                                    <h1 className="mcmendel-motto">Changing the face of energy in Africa</h1>
                                 </div>
                             </Slide>
                         </div>

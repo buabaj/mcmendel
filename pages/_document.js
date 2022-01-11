@@ -20,30 +20,30 @@
 //         return { ...page, styleTags };
 //     }
 
-//     render() {
-//         return (
-//             <html>
-//                 <Head>
-//                     <link rel="preconnect" href="https://fonts.googleapis.com" />
-//                     <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
-//                     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;900&family=Sora:wght@500&display=swap" rel="stylesheet" />
+// render() {
+//     return (
+//         <html>
+//             <Head>
+//                 <link rel="preconnect" href="https://fonts.googleapis.com" />
+//                 <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
+//                 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;900&family=Sora:wght@500&display=swap" rel="stylesheet" />
 
-//                     {this.props.styleTags}
-//                 </Head>
-//                 <body>
-//                     <Main />
-//                     <NextScript />
-//                 </body>
-//             </html>
-//         );
-//     }
+//                 {this.props.styleTags}
+//             </Head>
+//             <body>
+//                 <Main />
+//                 <NextScript />
+//             </body>
+//         </html>
+//     );
+// }
 // }
 
 
 
 
 
-import Document from 'next/document'
+import Document, { Head, Html, Main, NextScript } from 'next/document'
 import { ServerStyleSheet } from 'styled-components'
 
 export default class MyDocument extends Document {
@@ -70,6 +70,25 @@ export default class MyDocument extends Document {
       }
     } finally {
       sheet.seal()
+
     }
+  }
+  render() {
+    return (
+      <Html>
+        <Head>
+          <link rel="preconnect" href="https://fonts.googleapis.com" />
+          <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
+          <link href="https://fonts.googleapis.com/css2?family=Grenze&display=swap" rel="stylesheet" />
+          <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400&display=swap" rel="stylesheet"/>
+          <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap" rel="stylesheet"/>
+          {this.props.styleTags}
+        </Head>
+        <body>
+          <Main />
+          <NextScript />
+        </body>
+      </Html>
+    );
   }
 }
