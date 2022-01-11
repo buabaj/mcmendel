@@ -64,7 +64,7 @@
     }
 
     p.lg{
-      @apply text-lg sm:text-mcmendel-rem-1.2 text-justify opacity-70 tracking-wide;
+      @apply text-mcmendel-md text-justify opacity-70 tracking-wide;
     }
 
     footer{
@@ -80,7 +80,7 @@
 
 @layer utilities {
     .card-objective{
-        @apply h-56 flex cursor-pointer justify-center items-center rounded-md bg-white w-full px-10;
+        @apply min-h-56 cursor-pointer items-center rounded-md bg-white w-full py-5 px-10;
     }
 
     .card-about{

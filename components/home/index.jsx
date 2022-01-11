@@ -46,7 +46,7 @@ function Index() {
 
                 <Fade>
                     <div className="flex flex-col md:flex-row justify-between my-16 gap-5 lg:gap-16">
-                        <div className="w-full text-lg">
+                        <div className="w-full">
                             <motion.div whileHover={{ scale: 1.05 }}>
                                 <div className="card-about cursor-pointer">
                                     <h2 className="text-green-400 text-center sm:text-left">
@@ -90,14 +90,23 @@ function Index() {
                         <div className="flex flex-col md:flex-row my-16 gap-5 lg:gap-16">
 
                             <motion.div whileHover={{ scale: 1.05 }} className="card-objective">
+                                <h3 className="text-lg text-semibold text-green-500 mb-5 text-center">
+                                    Awareness
+                                </h3>
                                 Create an awareness on climate change and sustainable renewable sources of energy
                             </motion.div>
 
                             <motion.div whileHover={{ scale: 1.05 }} className="card-objective">
+                                <h3 className="text-lg text-semibold text-green-500 mb-5 text-center">
+                                    Support
+                                </h3>
                                 Support innovations that make use of renewable and clean energy sources
                             </motion.div>
 
-                            <motion.div whileHover={{ scale: 1.05 }} className="h-56 flex cursor-pointer justify-center items-center rounded-md bg-white w-full px-10">
+                            <motion.div whileHover={{ scale: 1.05 }} className="card-objective">
+                                <h3 className="text-lg text-semibold text-green-500 mb-5 text-center">
+                                    Network
+                                </h3>
                                 Connect participants to an investment network to raise funds to scale-up their proposals
                             </motion.div>
                         </div>
@@ -194,9 +203,9 @@ function Index() {
                         </div>
 
                     </div>
-                    <span className="text-gray-500">
+                    <div className="text-gray-500 text-center">
                         &copy; McMendel {new Date().getFullYear().toString()}, <span>All rights reserved</span>
-                    </span>
+                    </div>
                 </div>
             </footer>
         </div>

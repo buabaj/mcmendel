@@ -31,7 +31,10 @@ module.exports = {
 
       height: {
         'mcmendel-px-200': '200px',
+      },
 
+      flex:{
+        'mcmendel-flex-exclude':'100% 0 0'
       },
 
       fontFamily: {
@@ -44,7 +47,7 @@ module.exports = {
       },
 
       fontSize: {
-        'mcmendel-rem-1.2': '1.2rem'
+        'mcmendel-md': '1.05rem'
       },
 
       letterSpacing: {

@@ -14,6 +14,9 @@ function Jumbotron() {
         infinite: true,
         speed: 500,
         fade: true,
+        speed:2000,
+        easing:'cubic-bezier',
+        autoplaySpeed: 5000,
         pauseOnHover: false,
         autoplay: true,
         arrows: false,
@@ -84,10 +87,6 @@ function Jumbotron() {
                         </div>
                     </div>
                 </section>
-
-
-
-
 
             </Slider>
         </div>
