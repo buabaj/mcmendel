@@ -49,24 +49,6 @@ function Jumbotron() {
                     </div>
                 </section>
 
-                <section className="h-screen relative bg-[url('/renewable-4.jpg')] bg-cover bg-center bg-no-repeat">
-                    <div className="absolute w-full h-full flex items-center justify-center bg-mcmendel-transparent z-20">
-                        <div className="">
-                            <div>
-                                <div className="relative h-10 w-20 m-auto">
-                                    <Image layout='fill' src={"/right-arrow.svg"} alt="arrow right" />
-                                </div>
-                                <h1 className="main-header">McMendel</h1>
-                                <h2 className="sub-header">ENERGY</h2>
-                                <div className="relative h-10 w-20 m-auto">
-                                    <Image layout='fill' src={"/left-arrow.svg"} alt="arrow left" />
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-
-
 
                 <section className="h-screen relative bg-[url('/renewable-3.jpg')] bg-cover bg-center bg-no-repeat">
                     <div className="absolute w-full h-full flex items-center justify-center bg-mcmendel-transparent z-20">
@@ -84,6 +66,27 @@ function Jumbotron() {
                         </div>
                     </div>
                 </section>
+
+
+                <section className="h-screen relative bg-[url('/renewable-1.jpg')] bg-cover bg-center bg-no-repeat">
+                    <div className="absolute w-full h-full flex items-center justify-center bg-mcmendel-transparent z-20">
+                        <div className="">
+                            <div>
+                                <div className="relative h-10 w-20 m-auto">
+                                    <Image layout='fill' src={"/right-arrow.svg"} alt="arrow right" />
+                                </div>
+                                <h1 className="main-header">McMendel</h1>
+                                <h2 className="sub-header">ENERGY</h2>
+                                <div className="relative h-10 w-20 m-auto">
+                                    <Image layout='fill' src={"/left-arrow.svg"} alt="arrow left" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+
+
 
 
             </Slider>

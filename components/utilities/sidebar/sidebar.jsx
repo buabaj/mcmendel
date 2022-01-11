@@ -1,7 +1,7 @@
 import { AnimatePresence, motion } from "framer-motion";
 import { IoCloseOutline as Close } from 'react-icons/io5'
 import React from 'react'
-import Link from "next/link";
+import {Link} from "react-scroll";
 import { useRouter } from "next/router";
 
 
@@ -30,25 +30,21 @@ const SideBar = (props) => {
 
                         <div>
                             <ul className='flex flex-col gap-10'>
-                                <li>About Us</li>
-                                <li>Objectives</li>
-                                <li>Mission</li>
-                                <li>Contact Us</li>
-                                {/* <li>
-                                    <Link href="/">
-                                        <a className={`text-oval-px-24 font-bold ${router.pathname !== '/' && 'opacity-50'}`} onClick={() => props.setSidebar((sideBar) => !sideBar)}>
-                                            Personal
-                                        </a>
-                                    </Link>
+                                <li>
+                                    <Link onClick={() => props.setSidebar(false)} to="objectives" className="cursor-pointer" offset={-55} smooth duration={1000}> <span>Our Objectives</span> </Link>
                                 </li>
 
                                 <li>
-                                    <Link href="/business">
-                                        <a className={`text-oval-px-24 font-bold ${router.pathname !== '/business' && 'opacity-50'}`} onClick={() => props.setSidebar((sideBar) => !sideBar)}>
-                                            Business
-                                        </a>
-                                    </Link>
-                                </li> */}
+                                    <Link onClick={() => props.setSidebar(false)} to="green-project" className="cursor-pointer" offset={40} smooth duration={1000}> <span>The Green Project</span> </Link>
+                                </li>
+                                <li>
+                                    <Link onClick={() => props.setSidebar(false)} to="about-us" className="cursor-pointer" offset={-125} smooth duration={1000}> <span>About Us</span> </Link>
+                                </li>
+
+                                <li>
+                                    <Link onClick={() => props.setSidebar(false)} to="contact" className="cursor-pointer" offset={-55} smooth duration={1000}> <span>Contact Us</span> </Link>
+                                </li>
+
                             </ul>
                         </div>
                     </motion.div>

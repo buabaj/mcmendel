@@ -68,8 +68,8 @@
     }
 
     footer{
-      height: 32vh;
-      @apply bg-green-100 w-full p-2;
+      height: 72vh;
+      @apply bg-green-100 w-full p-5;
     }
     
     /* 
@@ -79,11 +79,11 @@
 }
 
 @layer utilities {
-    .objective-card{
-        @apply 
+    .card-objective{
+        @apply h-56 flex cursor-pointer justify-center items-center rounded-md bg-white w-full px-10;
     }
 
     .card-about{
-        @apply bg-green-100 py-5 min-h-60 px-10;
+        @apply bg-green-100 py-5 min-h-60 px-10 rounded-md;
     }
 }

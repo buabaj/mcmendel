@@ -2,7 +2,7 @@ import Image from 'next/image'
 import React from 'react'
 import SlickSlider from '../utilities/swiper/slick';
 import { Slide, Fade } from 'react-awesome-reveal'
-import Link from 'next/link';
+import { Link } from 'react-scroll';
 import { motion } from 'framer-motion';
 import Nav from '../utilities/nav/nav';
 import Jumbotron from '../utilities/swiper/jumbotron';
@@ -21,14 +21,15 @@ function Index() {
         <div>
 
             <Jumbotron />
-            <section className="padded">
+
+            <section id="about-us" className="padded">
                 <Slide direction='left'>
                     <h1 className="mb-5">
                         Who we are
                     </h1>
 
                     <p className="lg">
-                        McMendel Energy is an energy provision and a global warming and climate change advocate company aspiring to change the face of energy  using green energy. The Company is driven by its vision of making an impact in the energy sector of Ghana and Africa, which inspires, motivates and keeps the Firm focused on doing what really matters. The Company strives to make a difference in the lives of its clients, business partners and the society as a whole, by providing quality and affordable green energy to the society.  McMendel&apos;s success largely relies on two inter-dependent factors which includes nearness to its key clients; and a close understanding of what really matters to clients. Trust and integrity are McMendel&apos;s hallmark in achieving its objectives.
+                        McMendel Energy is an energy provision and a global warming and climate change advocate company aspiring to change the face of energy  using green energy. The Company is driven by its vision of making an impact in the <Link to="gh-renewable-energy" className="cursor-pointer text-blue-600" offset={-25} smooth duration={1000}> <span>energy sector in Ghana</span> </Link> and Africa, which inspires, motivates and keeps the Firm focused on doing what really matters. The Company strives to make a difference in the lives of its clients, business partners and the society as a whole, by providing quality and affordable green energy to the society.  McMendel&apos;s success largely relies on two inter-dependent factors which includes nearness to its key clients; and a close understanding of what really matters to clients. Trust and integrity are McMendel&apos;s hallmark in achieving its objectives.
                     </p>
                 </Slide>
 
@@ -69,7 +70,7 @@ function Index() {
 
 
 
-            <section className="padded bg-green-50 bg-[url('/gr.jpg')] bg-cover bg-center bg-no-repeat">
+            <section id="objectives" className="padded bg-green-50 bg-[url('/gr.jpg')] bg-cover bg-center bg-no-repeat">
                 <div>
 
                     <h1 className="mb-5 text-black font-semibold text-bg-green-400">
@@ -79,11 +80,11 @@ function Index() {
                     <Fade>
                         <div className="flex flex-col md:flex-row my-16 gap-5 lg:gap-16">
 
-                            <motion.div whileHover={{ scale: 1.05 }} className="h-56 flex cursor-pointer justify-center items-center rounded-md bg-white w-full px-10">
+                            <motion.div whileHover={{ scale: 1.05 }} className="card-objective">
                                 Create an awareness on climate change and sustainable renewable sources of energy
                             </motion.div>
 
-                            <motion.div whileHover={{ scale: 1.05 }} className="h-56 flex cursor-pointer justify-center items-center rounded-md bg-white w-full px-10">
+                            <motion.div whileHover={{ scale: 1.05 }} className="card-objective">
                                 Support innovations that make use of renewable and clean energy sources
                             </motion.div>
 
@@ -95,7 +96,7 @@ function Index() {
                 </div>
             </section>
 
-            <section className="padded">
+            <section id="gh-renewable-energy" className="padded">
                 <Slide direction='right'>
                     <h1 className="mb-5 text-bg-green-400">
                         Renewable energy in Ghana
@@ -112,24 +113,22 @@ function Index() {
             </section>
 
 
-            <section className="h-screen bg-[url('/green.jpg')] bg-cover bg-center bg-no-repeat relative">
+            <section id="green-project" className="h-screen bg-[url('/green.jpg')] bg-cover bg-center bg-no-repeat relative">
                 <div className="absolute w-full h-full bg-black opacity-50 z-20">
                     <div className="flex justify-center">
 
-                        <div className="text-white text-opacity-100 mt-60">
+                        <div className="text-white mt-60">
                             <h1 className="mb-2 text-5xl font-bold text-bg-green-400">
                                 The KNUST Green Energy Project
                             </h1>
-                            <Link href="#">
-                                <a className="text-center block font-semibold underline">Read more</a>
-                            </Link>
+                            <Link to="green-project-read" className="cursor-pointer underline block text-center" offset={-55} smooth duration={1000}> <span>Read more</span> </Link>
                         </div>
 
                     </div>
                 </div>
             </section>
 
-            <section className="padded">
+            <section id="green-project-read" className="padded">
                 <Fade>
                     <h1 className="mt-10 mb-5 text-bg-green-400 text-center">
                         The KNUST Green Energy Project
@@ -141,22 +140,50 @@ function Index() {
                 </Fade>
             </section>
 
-            <footer className="flex flex-col justify-between">
-                <div className="flex justify-center gap-60">
-                    <div>
-                        <h4 className="font-semibold">
-                            Socials
-                        </h4>
-                    </div>
-
-                    <div>
-                        <h4 className="font-semibold">
-                            Socials
-                        </h4>
-                    </div>
+            <footer id="contact" className="flex flex-col items-center justify-between">
+                <div className="">
+                    <button className=" bg-green-500 mt-20 hover:bg-green-700 text-white text-sm outline-none py-2 px-10 rounded active:scale-95">
+                        Contact Us
+                    </button>
                 </div>
+
                 <div>
-                    &copy; McMendel {new Date().getFullYear().toString()}, <span>All rights reserved</span>
+                    <div className="text-center mb-16">
+                        <div className="flex gap-20 text-gray-700">
+                            <div className="flex flex-col gap-5">
+                                <div><Image height="20" width="20" layout="fixed" src="/instagram.png" alt="icon" />
+                                    <span className="relative left-2 -top-1">
+                                        Instagram
+                                    </span>
+                                </div>
+
+                                <div><Image height="20" width="20" layout="fixed" src="/twitter.png" alt="icon" />
+                                    <span className="relative left-2 -top-1">
+                                        Twitter
+                                    </span>
+                                </div>
+                            </div>
+
+
+                            <div className="flex flex-col gap-5">
+                                <div><Image height="20" width="20" layout="fixed" src="/whatsapp.png" alt="icon" />
+                                    <span className="relative left-2 -top-1">
+                                        WhatsApp
+                                    </span>
+                                </div>
+
+                                <div><Image height="20" width="20" layout="fixed" src="/gmail.png" alt="icon" />
+                                    <span className="relative tracking-widest left-2 -top-1">
+                                        Email
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <span className="text-gray-500">
+                        &copy; McMendel {new Date().getFullYear().toString()}, <span>All rights reserved</span>
+                    </span>
                 </div>
             </footer>
         </div>
