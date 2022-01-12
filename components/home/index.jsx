@@ -41,10 +41,6 @@ function Index() {
                     <p className="lg">
                         McMendel Energy is an energy provision and a global warming and climate change advocate company aspiring to change the face of energy  using green energy. The Company is driven by its vision of making an impact in the <Link to="gh-renewable-energy" className="cursor-pointer text-blue-600" offset={-25} smooth duration={1000}> <span>energy sector in Ghana</span> </Link> and Africa, which inspires, motivates and keeps the Firm focused on doing what really matters. The Company strives to make a difference in the lives of its clients, business partners and the society as a whole, by providing quality and affordable green energy to the society.  McMendel&apos;s success largely relies on two inter-dependent factors which includes nearness to its key clients; and a close understanding of what really matters to clients. Trust and integrity are McMendel&apos;s hallmark in achieving its objectives.
                     </p>
-
-                    <div className="bg-green-50 h-96 w-full mt-5 relative">
-                        <ReactPlayer width={"100%"} height={"100%"} controls url="mcmendel.mp4"/>
-                    </div>
                 </Slide>
 
 
@@ -159,6 +155,11 @@ function Index() {
                     <p className="lg">
                         The KNUST Green Energy Project is a proposal to implement renewable energy and energy efficiency installations to replace the high cost of power generation in KNUST. With the push towards sustainability and the need to reduce greenhouse gases, renewable energy installation on campus is worth the investment. The project will provide renewable energy and energy efficiency installations to harness energy and use it more efficiently. With declining prices of green energy technology, it is recommended that now is an excellent time to pursue large scale sustainable energy use in KNUST. Solar and other clean sources of energy technology have proven to be cost efficient and more sustainable for the environment as the sources of this power generation is readily available in Kumasi. Adopting clean energy technology on campus is a way to promote green activities.  Implementing more renewable energy initiatives on campus will also provide ample learning opportunities for the student body.  The university through the SRC can set examples for others to follow, not only by making renewable energy seem more accessible but by taking the lead in campus sustainability and also helping with the fight against global warming and climate change also.
                     </p>
+
+
+                    <div className="bg-green-50 h-96 w-full mt-5 relative">
+                        <ReactPlayer width={"100%"} height={"100%"} controls url="mcmendel.mp4"/>
+                    </div>
                 </Fade>
             </section>
 
