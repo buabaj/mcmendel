@@ -2,97 +2,49 @@
 @tailwind components;
 @tailwind utilities;
 
-
 * {
   box-sizing: border-box;
   font-family: Poppins, sans-serif;
+  color: black;
 }
 
 .slick-slider .slick-arrow.slick-disabled{
-      display: none !important;
-  }
+  display: none !important;
+}
 
 .slick-current .use-case-card{
-    border: 2px solid #AED652;
+border: 2px solid #79CC8B;
 }
 
 .jumbotron .slick-dots{
-  bottom: 70px !important;
+bottom: 70px !important;
 }
 
 .card-slide .slick-dots {
-  bottom: 280px !important;
+bottom: 280px !important;
 }
 
 .slick-dots li button:before {
-    color: #AED652 !important;
-    font-size: 10px !important;
+color: #79CC8B !important;
+font-size: 10px !important;
 }
 
 
 @layer base {
 
-    nav {
-      @apply hidden text-white md:flex w-full h-14 justify-center gap-10 items-center font-semibold;
-      @apply font-sans;
-    }
-    section.padded{
-      @apply px-5 sm:px-16 lg:px-52 py-10;
-    }
-    
-    h1{
-      @apply text-center text-green-400 text-2xl sm:text-left md:text-3xl lg:text-4xl;
-      @apply font-heading;
-    }
-
-    h1.main-header{
-      font-family: Roboto;
-      @apply text-4xl md:text-7xl font-bold text-mcmendel-green-primary;
-      @apply font-heading;
-    }
-
-    h2.sub-header{
-      font-family: Roboto;
-      @apply text-xl md:text-2xl text-mcmendel-orange-primary font-semibold text-center mt-2 tracking-mcmendel-2em;
-      @apply font-sans;
-    }
-    
-    li.dropdown-menu-item{
-      @apply border-b text-sm p-2 hover:bg-green-600 cursor-pointer;
-    }
-
-
-    h2{
-      @apply text-2xl mb-5;
-      @apply font-sans;
-    }
-
-    p.lg{
-      @apply text-mcmendel-md text-justify opacity-70 tracking-wide;
-    }
-
-    footer{
-      height: 52vh;
-      @apply bg-green-100 w-full p-5;
-    }
-    
-}
-
-@layer components {
-    .card-objective{
-        @apply min-h-56 cursor-pointer items-center rounded-md bg-white w-full py-5 px-10;
-    }
-
-    .card-about{
-        @apply bg-green-100 py-5 min-h-60 px-10 rounded-md;
-    }
-}
-
-
-@layer utilities {
-  .mcmendel-motto{
-    font-family: Poppins;
-      @apply px-14 text-white mt-5;
+  nav{
+    @apply px-36 flex justify-between items-center;
   }
 
+  h1{
+    @apply text-center text-2xl sm:text-left md:text-3xl lg:text-5xl;
+  }
+
+  p.mulish{
+    @apply font-mulish text-custom-xsm;
+  }
+
+  section.padded {
+    @apply px-5 sm:px-16 lg:px-36;
+  }
 }

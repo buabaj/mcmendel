@@ -1,6 +1,9 @@
-const { screens, letterSpacing } = require('tailwindcss/defaultTheme')
+const {
+  screens,
+  letterSpacing,
+  lineHeight
+} = require('tailwindcss/defaultTheme')
 module.exports = {
-  mode: 'jit',
   content: [
     "./pages/**/*.{js,ts,jsx,tsx}",
     "./components/**/*.{js,ts,jsx,tsx}",
@@ -22,38 +25,38 @@ module.exports = {
 
     extend: {
       colors: {
-        'mcmendel-green-primary': '#AED652',
-        'mcmendel-green': '#83c99e',
-        'mcmendel-orange-primary': '#F78708',
-        'mcmendel-transparent': 'rgba(0,0,0,0.5)',
-        'mcmendel-green-transparent': 'rgba(0,0,0,0.5)'
-      },
-
-      height: {
-        'mcmendel-px-200': '200px',
-      },
-
-      flex:{
-        'mcmendel-flex-exclude':'100% 0 0'
-      },
-
-      fontFamily: {
-        sans: ['Ubuntu', 'sans-serif'],
-        heading: ['Ubuntu', 'sans-serif']
-      },
-
-      width: {
-        'mcmendel-px-240': '240px'
+        'green-primary': '#020f01',
+        'green-gray': '#60846E',
+        'green-light': '#EBF4EC;'
       },
 
       fontSize: {
-        'mcmendel-md': '1.05rem'
+        'custom-xxlg': '60px',
+        'custom-xlg': '45px',
+        'custom-lg': '35px',
+        'custom-md': '30px',
+        'custom-sm': '24px',
+        'custom-xsm': '20px'
+
       },
 
-      letterSpacing: {
-        "mcmendel-2em": "0.8em"
-      }
+      fontFamily: {
+        'roboto': 'roboto',
+        'mulish': 'mulish'
+      },
 
+      lineHeight: {
+        'hero-spaced': '110%'
+      },
+
+      height: {
+        'custom-200': '200px',
+        'custom-800': '800px'
+      },
+
+      width: {
+        'custom-240': '240px'
+      }
     },
   },
   plugins: [],
