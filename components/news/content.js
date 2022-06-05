@@ -1,6 +1,6 @@
 export const newsContent = [{
         title: "Launch of Starzec Energy Challenge",
-        image: "/18.jpg",
+        image: "/26.jpg",
         preview: "As a part of the Kwame Nkrumah University of Science and Technology (KNUST)'s 70th...",
         description: `As a part of the Kwame Nkrumah University of Science and Technology (KNUST)'s 70th Anniversary week-long Science and Technology Exhibition, Starzec Energy formerly McMendel Energy, in collaboration with the Student Representative Council (SRC) of KNUST, launched the KNUST Green Energy Challenge on May 13, 2022, at the Great Hall.
         The challenge is set to implement renewable energy and energy efficiency installations to replace the high cost of power generation in KNUST.
