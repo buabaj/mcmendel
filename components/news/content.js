@@ -6,13 +6,13 @@ export const newsContent = [{
 
     {
         title: "News 2",
-        image: "/1.jpg",
+        image: "/13.jpg",
         description: "News description"
     },
 
     {
         title: "News 3",
-        image: "/1.jpg",
+        image: "/4.jpg",
         description: "News description"
     },
 

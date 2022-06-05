@@ -10,8 +10,8 @@ function News() {
         <h3 className="text-custom-lg mb-4">News</h3>
 
         <div className="flex gap-6 justify-between">
-          {newsContent.map((news, index) => (
-            <>
+          {newsContent.map((news) => (
+            <div key={slugify(news.title)}>
               <div className="news-card">
                 <Link href={`/news/${slugify(news.title)}`}>
                   <a>
@@ -30,7 +30,7 @@ function News() {
                   </a>
                 </Link>
               </div>
-            </>
+            </div>
           ))}
         </div>
       </section>
