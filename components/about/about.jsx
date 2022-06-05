@@ -9,12 +9,12 @@ function About() {
         <div className="flex gap-24 mt-8 justify-between">
           <div>
             <p className="mulish">
-              Starzec, formerly McMendel Energy is an energy provision, a global warming and
-              climate change advocate company aspiring to change the face of
-              energy using green energy. The Company is driven by its vision of
-              making an impact in the energy sector in Ghana and Africa, which
-              inspires, motivates and keeps the Firm focused on doing what
-              really matters.
+              Starzec, formerly McMendel Energy is an energy provision, a global
+              warming and climate change advocate company aspiring to change the
+              face of energy using green energy. The Company is driven by its
+              vision of making an impact in the energy sector in Ghana and
+              Africa, which inspires, motivates and keeps the Firm focused on
+              doing what really matters.
             </p>
           </div>
 
@@ -26,13 +26,12 @@ function About() {
               Starzec&apos;s success largely relies on two inter-dependent
               factors which includes nearness to its key clients; and a close
               understanding of what really matters to clients. Trust and
-              integrity are Starzec&apos;s hallmark in achieving its
-              objectives.
+              integrity are Starzec&apos;s hallmark in achieving its objectives.
             </p>
           </div>
         </div>
       </div>
-{/* 
+      {/* 
       <div className="h-96 w-full mt-10 relative">
         <ReactPlayer
           width={"100%"}
@@ -42,9 +41,7 @@ function About() {
         />
       </div> */}
 
-      <div className="mt-24">
-        <div className="w-full border-t border-green-gray"></div>
-      </div>
+      <div className="mt-24" />
     </section>
   );
 }

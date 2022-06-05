@@ -64,11 +64,13 @@ module.exports = {
 
       height: {
         'custom-200': '200px',
-        'custom-800': '800px'
+        'custom-800': '800px',
+        'custom-250': '250px'
       },
 
       width: {
-        'custom-240': '240px'
+        'custom-240': '240px',
+        'custom-200': '200px'
       }
     },
   },
