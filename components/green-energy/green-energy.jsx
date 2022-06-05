@@ -10,8 +10,8 @@ function GreenEnergy() {
 
       <CarouselSlider/>
 
-      <section className=" padded flex gap-24 mt-8 justify-between">
-        <div className="w-1/2">
+      <section className=" padded md:flex md:gap-16 mt-8 justify-between">
+        <div className="md:w-1/2">
           <p className="mulish">
             The KNUST Green Energy Project is a proposal to implement renewable
             energy and energy efficiency installations to replace the high cost
@@ -25,7 +25,7 @@ function GreenEnergy() {
           </p>
         </div>
 
-        <div className="w-1/2">
+        <div className="md:w-1/2">
           <p className="mulish">
             Solar and other clean sources of energy technology have proven to be
             cost efficient and more sustainable for the environment as the

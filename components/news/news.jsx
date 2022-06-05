@@ -9,14 +9,11 @@ function News() {
       <section className="padded py-20">
         <h3 className="text-custom-lg mb-4">News</h3>
 
-        <div className="flex gap-6 justify-between">
+        <div className="sm:flex gap-6 justify-between">
           {newsContent.map((news) => (
-            <div key={slugify(news.title)}>
-              <div className="news-card">
+              <div key={slugify(news.title)} className="news-card">
                 <Link href={`/news/${slugify(news.title)}`}>
                   <a>
-                    {/* <div className="bg-[url('/9.jpg')] h-1/2" /> */}
-
                     <div
                       style={{ backgroundImage: `url(${news.image})` }}
                       className={"bg-no-repeat bg-center bg-cover mt-5 h-1/2"}
@@ -30,7 +27,7 @@ function News() {
                   </a>
                 </Link>
               </div>
-            </div>
+            
           ))}
         </div>
       </section>

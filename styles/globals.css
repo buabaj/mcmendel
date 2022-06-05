@@ -28,7 +28,7 @@
     @apply box-border text-black font-montserrat;
   }
   nav {
-    @apply px-36 flex justify-between items-center bg-custom-transparent-deeper;
+    @apply px-6 sm:px-16 md:px-24 lg:px-36 flex justify-between items-center bg-custom-transparent-deeper;
   }
 
   li {
@@ -36,11 +36,11 @@
   }
 
   h1 {
-    @apply text-center text-2xl sm:text-left md:text-3xl lg:text-5xl;
+    @apply text-2xl sm:text-left md:text-3xl lg:text-5xl;
   }
 
   p.mulish {
-    @apply font-mulish text-custom-xsm;
+    @apply font-mulish text-custom-xxsm sm:text-custom-xsm md:text-custom-xsm;
   }
 
   section.padded {
@@ -54,6 +54,6 @@
   }
 
   .news-card {
-    @apply h-80 w-72;
+    @apply h-80 sm:w-1/2 md:w-1/3;
   }
 }

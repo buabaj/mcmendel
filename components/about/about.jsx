@@ -3,9 +3,9 @@ import React from "react";
 function About() {
   return (
     <section className="padded py-10" id="about">
-      <div className="mt-20">
-        <h3 className="text-custom-lg">Learn About Us</h3>
-        <div className="flex gap-24 mt-8 justify-between">
+      <div className="md:mt-10">
+        <h3 className="text-custom-md md:text-custom-lg">Learn About Us</h3>
+        <div className="md:flex md:gap-16 mt-8 justify-between">
           <div>
             <p className="mulish">
               Starzec, formerly McMendel Energy is an energy provision, a global
@@ -30,17 +30,9 @@ function About() {
           </div>
         </div>
       </div>
-      {/* 
-      <div className="h-96 w-full mt-10 relative">
-        <ReactPlayer
-          width={"100%"}
-          height={"100%"}
-          controls
-          url="mcmendel.mp4"
-        />
-      </div> */}
 
-      <div className="mt-24" />
+
+      <div className="md:mt-24" />
     </section>
   );
 }

@@ -9,9 +9,7 @@ function NewsDetail() {
   const mounted = React.useRef(false);
   const [news, setNews] = React.useState({});
   const slug = router.query["news-slug"];
-  //   console.log(slug);
 
-  //   var found = obj.find(e => e.name === 'John');
 
   React.useEffect(() => {
     mounted.current = true;
@@ -28,8 +26,8 @@ function NewsDetail() {
   }, []);
 
   return (
-    <section className="padded pt-20 pb-10">
-      <div className="font-semibold text-4xl">{news.title}</div>
+    <section className="padded y-10">
+      <div className="font-semibold text-3xl lg:text-4xl">{news.title}</div>
       <div>
         {news.image && (
           <div

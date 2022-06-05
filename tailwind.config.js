@@ -12,12 +12,12 @@ module.exports = {
 
     minHeight: (theme) => ({
       ...theme('spacing'),
-      'custom-min':'100vh'
+      'custom-min': '100vh'
     }),
 
     minWidth: (theme) => ({
       ...theme('spacing'),
-      'custom-min':'100vw'
+      'custom-min': '100vw'
     }),
 
     screens: {
@@ -46,8 +46,9 @@ module.exports = {
         'custom-lg': '35px',
         'custom-md': '30px',
         'custom-sm': '24px',
-        'custom-xsm': '20px'
-
+        'custom-xsm': '20px',
+        'custom-xxsm': '16px',
+        'custom-xxxsm': '10px'
       },
 
       fontFamily: {
