@@ -9,7 +9,7 @@ function About() {
         <div className="flex gap-24 mt-8 justify-between">
           <div>
             <p className="mulish">
-              McMendel Energy is an energy provision and a global warming and
+              Starzec Energy is an energy provision and a global warming and
               climate change advocate company aspiring to change the face of
               energy using green energy. The Company is driven by its vision of
               making an impact in the energy sector in Ghana and Africa, which
@@ -23,10 +23,10 @@ function About() {
               The Company strives to make a difference in the lives of its
               clients, business partners and the society as a whole, by
               providing quality and affordable green energy to the society.
-              McMendel&apos;s success largely relies on two inter-dependent
+              Starzec&apos;s success largely relies on two inter-dependent
               factors which includes nearness to its key clients; and a close
               understanding of what really matters to clients. Trust and
-              integrity are McMendel&apos;s hallmark in achieving its
+              integrity are Starzec&apos;s hallmark in achieving its
               objectives.
             </p>
           </div>
