@@ -43,7 +43,6 @@ function CarouselSlider() {
         <div className="bg-[url('/23.jpg')] bg-no-repeat bg-center bg-cover h-screen" />
       </div>
 
-
       <div>
         <div className="bg-[url('/8.jpg')] bg-no-repeat bg-center bg-cover h-screen" />
       </div>
