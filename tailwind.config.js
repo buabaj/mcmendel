@@ -32,8 +32,10 @@ module.exports = {
         'green-bright': '#83c99e',
         'green-deep': '#AED652',
         'green-gray': '#60846E',
+        'light-gray': '#E6EEE7',
         'green-light': '#EBF4EC',
-        'custom-transparent': 'rgba(0,0,0,0.6)'
+        'custom-transparent': 'rgba(0,0,0,0.5)',
+        'custom-transparent-deeper': 'rgba(0,0,0,0.15)'
       },
 
       fontSize: {
@@ -50,6 +52,10 @@ module.exports = {
         'roboto': 'roboto',
         'mulish': 'mulish',
         'montserrat': 'Montserrat'
+      },
+
+      boxShadow: {
+        'card': '0px 3px 5px rgba(0, 0, 0, 0.2)'
       },
 
       lineHeight: {

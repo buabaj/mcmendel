@@ -29,7 +29,7 @@
     @apply box-border text-black font-montserrat;
   }
   nav {
-    @apply px-36 flex justify-between items-center;
+    @apply px-36 flex justify-between items-center bg-custom-transparent-deeper;
   }
 
   li {
@@ -46,5 +46,16 @@
 
   section.padded {
     @apply px-5 sm:px-16 lg:px-36;
+  }
+}
+
+
+@layer components{
+  .card{
+    @apply h-60 w-52 bg-white shadow-card;
+  }
+
+  .news-card{
+    @apply h-60 w-52 bg-light-gray;
   }
 }

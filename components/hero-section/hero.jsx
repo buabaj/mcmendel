@@ -3,17 +3,16 @@ import React from "react";
 
 function Hero() {
   return (
-    // <div className="h-screen bg-[url('/renewable-5.jpg')] bg-cover bg-center bg-no-repeat">
     <div className="h-screen relative bg-[url('/renewable-5.jpg')] bg-cover bg-center bg-no-repeat">
       <div className="absolute w-full h-full bg-custom-transparent z-20">
         <nav>
           <div className="relative h-16 w-28 my-4">
             <Image layout="fill" src="/logo.png" alt="" />
           </div>
-          {/* <div className="bg-[url('/logo.png')] w-24 h-24 bg-no-repeat relative top-3" /> */}
+
           <ul className="flex gap-10">
             <li>HOME</li>
-            <li>PROJECT</li>
+            <li>PROJECTS</li>
             <li>ABOUT</li>
             <li>CONTACT</li>
           </ul>

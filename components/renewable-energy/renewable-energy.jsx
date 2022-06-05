@@ -11,8 +11,8 @@ function RenewableEnergy() {
           The combustion of fossil fuels for energy results in a significant
           amount of greenhouse gas emissions that contribute to global warming.
           Most sources of renewable energy result in little to no emissions,
-          even when considering the full life cycle of the technologies. The
-          three main renewable energy sources in Ghana are:
+          even when considering the full life cycle of the technologies. Some
+          sources of renewable energy in Ghana include:
         </p>
 
         <div className="mt-32">
