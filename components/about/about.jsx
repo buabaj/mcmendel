@@ -9,7 +9,7 @@ function About() {
         <div className="flex gap-24 mt-8 justify-between">
           <div>
             <p className="mulish">
-              Starzec Energy, formerly McMendel is an energy provision, a global warming and
+              Starzec, formerly McMendel Energy is an energy provision, a global warming and
               climate change advocate company aspiring to change the face of
               energy using green energy. The Company is driven by its vision of
               making an impact in the energy sector in Ghana and Africa, which

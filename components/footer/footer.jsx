@@ -11,7 +11,7 @@ function Footer() {
   };
 
   return (
-    <section className="padded bg-green-gray pt-20 pb-10">
+    <section className="padded bg-green-400 pt-20 pb-10">
       <footer id="contact" className="flex h-40 flex-col justify-between">
         <div className="flex">
           <div>
@@ -21,9 +21,10 @@ function Footer() {
               <li className="text-white">+233 20 912 6193</li>
               <li className="text-white">Accra, Ghana</li>
             </ul>
+            
           </div>
         </div>
-        <div>&copy; Starz, 2022, All rights reserved</div>
+        <div>&copy; Starzec, 2022, All rights reserved</div>
         <div></div>
       </footer>
     </section>

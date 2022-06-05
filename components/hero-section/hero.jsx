@@ -13,7 +13,7 @@ function Hero() {
           {/* <div className="bg-[url('/logo.png')] w-24 h-24 bg-no-repeat relative top-3" /> */}
           <ul className="flex gap-10">
             <li>HOME</li>
-            <li>PROJECT</li>
+            <li>PROJECTS</li>
             <li>ABOUT</li>
             <li>CONTACT</li>
           </ul>

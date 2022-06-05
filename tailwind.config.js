@@ -33,7 +33,8 @@ module.exports = {
         'green-deep': '#AED652',
         'green-gray': '#60846E',
         'green-light': '#EBF4EC',
-        'custom-transparent': 'rgba(0,0,0,0.6)'
+        'custom-transparent': 'rgba(0,0,0,0.5)',
+        'custom-transparent-deeper': 'rgba(0,0,0,0.15)'
       },
 
       fontSize: {
