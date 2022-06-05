@@ -15,7 +15,7 @@ function CarouselSlider() {
       emulateTouch
     >
       <div>
-        <div className="bg-[url('/solar.jpg')] bg-no-repeat bg-center bg-cover h-screen relative">
+        <div className="bg-[url('/26.jpg')] bg-no-repeat bg-center bg-cover h-screen relative">
           <div className="absolute bottom-0 right-3 text-white text-right">
             The KNUST Green Project <br />
             Kumasi, Ghana
@@ -24,8 +24,25 @@ function CarouselSlider() {
       </div>
 
       <div>
-        <div className="bg-[url('/1.jpg')] bg-no-repeat bg-center bg-cover h-screen" />
+        <div className="bg-[url('/16.jpg')] bg-no-repeat bg-center bg-cover h-screen" />
       </div>
+
+      <div>
+        <div className="bg-[url('/11.jpg')] bg-no-repeat bg-center bg-cover h-screen" />
+      </div>
+
+      <div>
+        <div className="bg-[url('/18.jpg')] bg-no-repeat bg-center bg-cover h-screen" />
+      </div>
+
+      <div>
+        <div className="bg-[url('/21.jpg')] bg-no-repeat bg-center bg-cover h-screen" />
+      </div>
+
+      <div>
+        <div className="bg-[url('/23.jpg')] bg-no-repeat bg-center bg-cover h-screen" />
+      </div>
+
 
       <div>
         <div className="bg-[url('/8.jpg')] bg-no-repeat bg-center bg-cover h-screen" />
