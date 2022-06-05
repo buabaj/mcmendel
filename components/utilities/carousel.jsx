@@ -24,7 +24,7 @@ function CarouselSlider() {
       </div>
 
       <div>
-        <div className="bg-[url('/9.jpg')] bg-no-repeat bg-center bg-cover h-screen" />
+        <div className="bg-[url('/1.jpg')] bg-no-repeat bg-center bg-cover h-screen" />
       </div>
 
       <div>
@@ -34,10 +34,22 @@ function CarouselSlider() {
         <div className="bg-[url('/3.jpg')] bg-no-repeat bg-center bg-cover h-screen" />
       </div>
       <div>
-        <div className="bg-[url('/5.jpg')] bg-no-repeat bg-center bg-cover h-screen" />
+        <div className="bg-[url('/2.jpg')] bg-no-repeat bg-center bg-cover h-screen" />
       </div>
+
       <div>
         <div className="bg-[url('/4.jpg')] bg-no-repeat bg-center bg-cover h-screen" />
+      </div>
+
+      <div>
+        <div className="bg-[url('/5.jpg')] bg-no-repeat bg-center bg-cover h-screen" />
+      </div>
+
+      <div>
+        <div className="bg-[url('/6.jpg')] bg-no-repeat bg-center bg-cover h-screen" />
+      </div>
+      <div>
+        <div className="bg-[url('/7.jpg')] bg-no-repeat bg-center bg-cover h-screen" />
       </div>
     </Carousel>
   );
