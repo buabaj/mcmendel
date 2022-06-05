@@ -7,7 +7,7 @@ function CarouselSlider() {
     <Carousel
       showArrows
       infiniteLoop
-      swipeable
+      swipeable={false}
       showThumbs={false}
       useKeyboardArrows
       stopOnHover={false}
