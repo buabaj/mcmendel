@@ -38,7 +38,7 @@ export default function SlickSlider() {
         ]}
       >
         <div>
-          <div className="use-case-card cursor-pointer h-custom-200 w-custom-240 m-auto flex justify-center items-center transition-all hover:scale-105 rounded-lg">
+          <div className="cursor-pointer h-custom-200 w-custom-240 m-auto flex justify-center items-center transition-all hover:scale-105 rounded-lg">
             <div className="h-36 w-36 relative">
               <Image
                 layout="fill"
@@ -52,7 +52,7 @@ export default function SlickSlider() {
         </div>
 
         <div>
-          <div className="use-case-card cursor-pointer h-custom-200 w-custom-240 m-auto flex justify-center items-center transition-all hover:scale-105 rounded-lg">
+          <div className="cursor-pointer h-custom-200 w-custom-240 m-auto flex justify-center items-center transition-all hover:scale-105 rounded-lg">
             <div className="h-36 w-36 relative">
               <Image
                 layout="fill"
@@ -66,7 +66,7 @@ export default function SlickSlider() {
         </div>
 
         <div>
-          <div className="use-case-card cursor-pointer h-custom-200 w-custom-240 m-auto flex justify-center items-center transition-all hover:scale-105 rounded-lg">
+          <div className="cursor-pointer h-custom-200 w-custom-240 m-auto flex justify-center items-center transition-all hover:scale-105 rounded-lg">
             <div className="h-36 w-36 relative">
               <Image
                 layout="fill"

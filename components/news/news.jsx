@@ -1,4 +1,6 @@
+import Link from "next/link";
 import React from "react";
+import slugify from "../utilities/slugify";
 import { newsContent } from "./content";
 
 function News() {
@@ -8,23 +10,27 @@ function News() {
         <h3 className="text-custom-lg mb-4">News</h3>
 
         <div className="flex gap-6 justify-between">
-          {newsContent.map((news, index) => (
-            <>
+          {newsContent.map((news) => (
+            <div key={slugify(news.title)}>
               <div className="news-card">
-                <div className="bg-[url('/9.jpg')] h-1/2" />
+                <Link href={`/news/${slugify(news.title)}`}>
+                  <a>
+                    {/* <div className="bg-[url('/9.jpg')] h-1/2" /> */}
 
-                <div className="mt-1">
-                  <h3 className="font-semibold">
-                    Launch of Starzec Energy Challenge
-                  </h3>
+                    <div
+                      style={{ backgroundImage: `url(${news.image})` }}
+                      className={"bg-no-repeat bg-center bg-cover mt-5 h-1/2"}
+                    />
 
-                  <p className="font-mulish mt-2 text-lg">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Assumenda, ad...
-                  </p>
-                </div>
+                    <div className="mt-1">
+                      <h3 className="font-semibold">{news.title}</h3>
+
+                      <p className="font-mulish mt-2 text-lg">{news.preview}</p>
+                    </div>
+                  </a>
+                </Link>
               </div>
-            </>
+            </div>
           ))}
         </div>
       </section>

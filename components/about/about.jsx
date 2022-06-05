@@ -1,9 +1,8 @@
 import React from "react";
-import ReactPlayer from "react-player";
 
 function About() {
   return (
-    <section className="padded py-10">
+    <section className="padded py-10" id="about">
       <div className="mt-20">
         <h3 className="text-custom-lg">Learn About Us</h3>
         <div className="flex gap-24 mt-8 justify-between">
