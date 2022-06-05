@@ -15,17 +15,17 @@ function News() {
               <div className="news-card">
                 <Link href={`/news/${slugify(news.title)}`}>
                   <a>
-                    <div className="bg-[url('/9.jpg')] h-1/2" />
+                    {/* <div className="bg-[url('/9.jpg')] h-1/2" /> */}
+
+                    <div
+                      style={{ backgroundImage: `url(${news.image})` }}
+                      className={"bg-no-repeat bg-center bg-cover mt-5 h-1/2"}
+                    />
 
                     <div className="mt-1">
-                      <h3 className="font-semibold">
-                        Launch of Starzec Energy Challenge
-                      </h3>
+                      <h3 className="font-semibold">{news.title}</h3>
 
-                      <p className="font-mulish mt-2 text-lg">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Assumenda, ad...
-                      </p>
+                      <p className="font-mulish mt-2 text-lg">{news.preview}</p>
                     </div>
                   </a>
                 </Link>
