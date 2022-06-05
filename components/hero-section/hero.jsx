@@ -1,5 +1,7 @@
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
+import { Link as ScrollLink, animateScroll as scroll } from "react-scroll";
 
 function Hero() {
   return (
@@ -11,11 +13,28 @@ function Hero() {
           </div>
 
           <ul className="flex gap-10">
-            <li>HOME</li>
+            <li>
+              <Link href="/">
+                <a>HOME</a>
+              </Link>
+            </li>
             <li>PROJECTS</li>
-            <li>ABOUT</li>
-            <li>OUR TEAM</li>
-            <li>CONTACT</li>
+            <li>
+              <ScrollLink className="cursor-pointer" to="about" spy smooth>
+                ABOUT
+              </ScrollLink>
+            </li>
+            <li>
+              <Link href="/executives" passHref>
+                <a>OUR TEAM</a>
+              </Link>
+            </li>
+
+            <li>
+              <ScrollLink className="cursor-pointer" to="footer" spy smooth>
+                CONTACT
+              </ScrollLink>
+            </li>
           </ul>
         </nav>
 

@@ -11,7 +11,7 @@ function Footer() {
   };
 
   return (
-    <section className="padded bg-green-400 pt-20 pb-10">
+    <section className="padded bg-green-400 pt-20 pb-10" id="footer">
       <footer id="contact" className="flex flex-col justify-between">
         <div className="flex">
           <div>
