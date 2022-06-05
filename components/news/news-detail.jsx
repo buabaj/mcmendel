@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { useRouter } from "next/router";
 import React from "react";
 import slugify from "../utilities/slugify";
@@ -8,9 +9,6 @@ function NewsDetail() {
   const mounted = React.useRef(false);
   const [news, setNews] = React.useState({});
   const slug = router.query["news-slug"];
-  //   console.log(slug);
-
-  //   var found = obj.find(e => e.name === 'John');
 
   React.useEffect(() => {
     mounted.current = true;
@@ -30,10 +28,19 @@ function NewsDetail() {
     <section className="padded pt-20 pb-10">
       <div className="font-semibold text-4xl">{news.title}</div>
       <div>
-        <div
-          className={`bg-[url('/11.jpg')] bg-no-repeat bg-center bg-cover h-custom-500 mt-5`}
-        />
-        {console.log(news)}
+        {/* {console.log(news)} */}
+        <div className="h-custom-500 w-full relative mt-5">
+          {news.image && (
+            <Image
+              src={news.image}
+              alt="new image"
+
+              objectFit="cover"
+              layout="fill"
+            />
+          )}
+        </div>
+
         <p className="mt-5 mulish">
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam iure
           officia porro, corporis minima commodi quod? Architecto dolorem aut
