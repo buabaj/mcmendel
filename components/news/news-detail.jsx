@@ -37,18 +37,6 @@ function NewsDetail() {
             className={"bg-no-repeat bg-center bg-cover h-custom-500 mt-5"}
           />
         )}
-
-        {/* <div className="h-custom-500 w-full relative mt-5">
-          {news.image && (
-            <Image
-              src={news.image}
-              alt="new image"
-              objectFit="cover"
-              layout="fill"
-            />
-          )}
-        </div> */}
-
         <p className="mt-5 mulish">{news.description}</p>
       </div>
     </section>
