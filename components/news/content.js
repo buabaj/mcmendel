@@ -17,12 +17,12 @@ export const newsContent = [{
         `
     },
 
-    {
-        title:"Title",
-        image: "7.jpg",
-        preview: "Some text",
-        descripttion: "Some text is not showing"
-    },
+    // {
+    //     title:"Title",
+    //     image: "7.jpg",
+    //     preview: "Some text",
+    //     descripttion: "Some text is not showing"
+    // },
 
     // {
     //     title:"Title",
