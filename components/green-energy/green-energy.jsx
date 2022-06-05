@@ -1,4 +1,5 @@
 import React from "react";
+import CarouselSlider from "../utilities/carousel";
 
 function GreenEnergy() {
   return (
@@ -7,7 +8,7 @@ function GreenEnergy() {
         <h3 className="text-custom-md mb-4">The KNUST Green Energy Project</h3>
       </section>
 
-      <div className="bg-[url('/solar.jpg')] bg-no-repeat bg-center bg-cover h-screen" />
+      <CarouselSlider/>
 
       <section className=" padded flex gap-24 mt-8 justify-between">
         <div className="w-1/2">

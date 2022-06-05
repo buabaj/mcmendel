@@ -27,7 +27,8 @@ module.exports = {
       colors: {
         'green-primary': '#020f01',
         'green-gray': '#60846E',
-        'green-light': '#EBF4EC;'
+        'green-light': '#EBF4EC',
+        'custom-transparent':'rgba(0,0,0,0.6)'
       },
 
       fontSize: {

@@ -8,39 +8,41 @@
   color: black;
 }
 
-.slick-slider .slick-arrow.slick-disabled{
+.slick-slider .slick-arrow.slick-disabled {
   display: none !important;
 }
 
-.slick-current .use-case-card{
-border: 2px solid #79CC8B;
+.slick-current .use-case-card {
+  border: 2px solid #79cc8b;
 }
 
-.jumbotron .slick-dots{
-bottom: 70px !important;
+.jumbotron .slick-dots {
+  bottom: 70px !important;
 }
 
 .card-slide .slick-dots {
-bottom: 280px !important;
+  bottom: 280px !important;
 }
 
 .slick-dots li button:before {
-color: #79CC8B !important;
-font-size: 10px !important;
+  color: #79cc8b !important;
+  font-size: 10px !important;
 }
 
-
 @layer base {
-
-  nav{
-    @apply px-36 flex justify-between items-center;
+  nav {
+    @apply px-36 flex justify-between items-center bg-black;
   }
 
-  h1{
+  li{
+    @apply text-white;
+  }
+
+  h1 {
     @apply text-center text-2xl sm:text-left md:text-3xl lg:text-5xl;
   }
 
-  p.mulish{
+  p.mulish {
     @apply font-mulish text-custom-xsm;
   }
 

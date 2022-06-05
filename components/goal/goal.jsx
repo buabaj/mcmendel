@@ -14,7 +14,7 @@ function Goal() {
             <div className="w-1/2">
               <h3 className="text-custom-md mb-4">Vision</h3>
               <p className="mulish">
-                McMendel aspires to be a leading provider of quality and
+              Starzec aspires to be a leading provider of quality and
                 affordable clean energy in every nook and cranny of Ghana and
                 Africa, and also help change the face of energy in Africa using
                 renewable energy.
@@ -30,7 +30,7 @@ function Goal() {
             <div className="w-1/2">
               <h3 className="text-custom-md mb-4">Mission</h3>
               <p className="mulish">
-                McMendel exists to be the trusted green energy provision
+              Starzec exists to be the trusted green energy provision
                 partner, creating unmatched value by providing quality and
                 affordable green energy to all and sundry.
               </p>
