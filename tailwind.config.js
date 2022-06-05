@@ -12,10 +12,12 @@ module.exports = {
 
     minHeight: (theme) => ({
       ...theme('spacing'),
+      'custom-min':'100vh'
     }),
 
     minWidth: (theme) => ({
       ...theme('spacing'),
+      'custom-min':'100vw'
     }),
 
     screens: {
@@ -64,11 +66,13 @@ module.exports = {
 
       height: {
         'custom-200': '200px',
-        'custom-800': '800px'
+        'custom-800': '800px',
+        'custom-250': '250px'
       },
 
       width: {
-        'custom-240': '240px'
+        'custom-240': '240px',
+        'custom-200': '200px'
       }
     },
   },

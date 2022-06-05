@@ -2,7 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
 .slick-slider .slick-arrow.slick-disabled {
   display: none !important;
 }
@@ -25,7 +24,7 @@
 }
 
 @layer base {
-  body{
+  body {
     @apply box-border text-black font-montserrat;
   }
   nav {
@@ -49,13 +48,12 @@
   }
 }
 
-
-@layer components{
-  .card{
-    @apply h-60 w-52 bg-white shadow-card;
+@layer components {
+  .card {
+    @apply h-52 w-52 rounded-full bg-white;
   }
 
-  .news-card{
-    @apply h-60 w-52 bg-light-gray;
+  .news-card {
+    @apply h-80 w-72;
   }
 }
