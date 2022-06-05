@@ -14,6 +14,7 @@ function Hero() {
             <li>HOME</li>
             <li>PROJECTS</li>
             <li>ABOUT</li>
+            <li>OUR TEAM</li>
             <li>CONTACT</li>
           </ul>
         </nav>

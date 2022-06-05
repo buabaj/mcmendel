@@ -12,10 +12,12 @@ module.exports = {
 
     minHeight: (theme) => ({
       ...theme('spacing'),
+      'custom-min':'100vh'
     }),
 
     minWidth: (theme) => ({
       ...theme('spacing'),
+      'custom-min':'100vw'
     }),
 
     screens: {

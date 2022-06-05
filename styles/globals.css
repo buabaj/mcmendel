@@ -50,7 +50,7 @@
 
 @layer components {
   .card {
-    @apply h-60 w-52 bg-white shadow-card;
+    @apply h-52 w-52 rounded-full bg-white;
   }
 
   .news-card {
