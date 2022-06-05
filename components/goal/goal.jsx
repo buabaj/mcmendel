@@ -39,7 +39,7 @@ function Goal() {
         </div>
       </section>
 
-      <section className="padded bg-green-light py-10">
+      <section className="padded bg-green-400 py-10">
         <div className="mt-20">
           <h3 className="text-custom-md mb-4">Our Objectives</h3>
           <div className="flex justify-between gap-32 mt-16">
