@@ -26,7 +26,7 @@ function NewsDetail() {
   }, []);
 
   return (
-    <section className="padded y-10">
+    <section className="padded y-10 mt-20">
       <div className="font-semibold text-3xl lg:text-4xl">{news.title}</div>
       <div>
         {news.image && (
