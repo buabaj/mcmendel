@@ -26,9 +26,14 @@ module.exports = {
     extend: {
       colors: {
         'green-primary': '#020f01',
+        // #AED652
+        // #83c99e
+        // #F78708
+        'green-bright': '#83c99e',
+        'green-deep': '#AED652',
         'green-gray': '#60846E',
         'green-light': '#EBF4EC',
-        'custom-transparent':'rgba(0,0,0,0.6)'
+        'custom-transparent': 'rgba(0,0,0,0.6)'
       },
 
       fontSize: {
@@ -43,7 +48,8 @@ module.exports = {
 
       fontFamily: {
         'roboto': 'roboto',
-        'mulish': 'mulish'
+        'mulish': 'mulish',
+        'montserrat': 'Montserrat'
       },
 
       lineHeight: {

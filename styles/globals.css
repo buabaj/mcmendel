@@ -2,11 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-* {
-  box-sizing: border-box;
-  font-family: Poppins, sans-serif;
-  color: black;
-}
 
 .slick-slider .slick-arrow.slick-disabled {
   display: none !important;
@@ -30,11 +25,14 @@
 }
 
 @layer base {
+  body{
+    @apply box-border text-black font-montserrat;
+  }
   nav {
-    @apply px-36 flex justify-between items-center bg-black;
+    @apply px-36 flex justify-between items-center;
   }
 
-  li{
+  li {
     @apply text-white;
   }
 
