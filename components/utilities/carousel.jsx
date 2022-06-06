@@ -6,12 +6,12 @@ function CarouselSlider() {
   return (
     <Carousel
       showArrows
-      // infiniteLoop
+      infiniteLoop
       swipeable={false}
       showThumbs={false}
       useKeyboardArrows
       stopOnHover={false}
-      // autoPlay
+      autoPlay
       emulateTouch
     >
       <div>
@@ -19,7 +19,7 @@ function CarouselSlider() {
       </div>
 
       <div>
-        <div className="bg-[url('/16.jpg')] bg-no-repeat bg-cover h-screen bg-custom-y-lg" />
+        <div className="bg-[url('/16.jpg')] bg-no-repeat bg-cover h-screen bg-center md:bg-custom-y-lg" />
       </div>
 
       <div>
@@ -45,7 +45,7 @@ function CarouselSlider() {
         <div className="bg-[url('/3.jpg')] bg-no-repeat bg-center bg-cover h-screen" />
       </div>
       <div>
-        <div className="bg-[url('/2.jpg')] bg-no-repeat bg-cover h-screen bg-custom-y-lg" />
+        <div className="bg-[url('/2.jpg')] bg-no-repeat bg-cover h-screen bg-center md:bg-custom-y-lg" />
       </div>
 
       <div>
@@ -53,7 +53,7 @@ function CarouselSlider() {
       </div>
 
       <div>
-        <div className="bg-[url('/5.jpg')] bg-no-repeat bg-cover h-screen bg-custom-y-md" />
+        <div className="bg-[url('/5.jpg')] bg-no-repeat bg-cover h-screen bg-center md:bg-custom-y-md" />
       </div>
 
       <div>
