@@ -4,7 +4,7 @@ import React from "react";
 import { IoMenuOutline } from "react-icons/io5";
 import { Link as ScrollLink, animateScroll as scroll } from "react-scroll";
 
-function Hero() {
+function Hero({ cycleOpen }) {
   return (
     <div className="h-screen relative bg-[url('/renewable-5.jpg')] bg-cover bg-center bg-no-repeat">
       <div className="absolute w-full h-full bg-custom-transparent z-20">
@@ -16,6 +16,7 @@ function Hero() {
           <div>
             <IoMenuOutline
               size={40}
+              onClick={cycleOpen}
               className="text-white block cursor-pointer md:hidden"
             />
           </div>

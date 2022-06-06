@@ -17,6 +17,7 @@ function NewsDetail() {
     if (mounted.current) {
       const data = newsContent.find((e) => slugify(e.title) === slug);
       setNews({ ...data });
+      console.log(news)
     }
 
     return () => {
