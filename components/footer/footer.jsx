@@ -36,16 +36,14 @@ function Footer() {
               <li>
                 <div
                   onClick={() =>
-                    goTo(
-                      "www.facebook.com/Starzec-Energy-103972402344165"
-                    )
+                    goTo("www.facebook.com/Starzec-Energy-103972402344165")
                   }
                   className="bg-[url('/facebook.png')] bg-no-repeat bg-contain h-5 w-5 cursor-pointer"
                 />
               </li>
               <li>
                 <div
-                  onClick={() => goTo("twitter.com/starzec_energy/")}
+                  onClick={() => goTo("instagram.com/starzec_energy?igshid=YmMyMTA2M2Y=")}
                   className="bg-[url('/instagram.png')] bg-no-repeat bg-contain h-5 w-5 cursor-pointer"
                 />
               </li>
