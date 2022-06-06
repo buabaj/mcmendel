@@ -3,7 +3,7 @@ import CarouselSlider from "../utilities/carousel";
 
 function GreenEnergy() {
   return (
-    <div className="bg-green-light pt-10 md:pt-20 pb-20">
+    <div className="bg-green-light pt-10 md:pt-20 pb-20" id="green-project">
       <section className="padded">
         <h3 className="text-custom-md mb-4">The KNUST Green Energy Project</h3>
       </section>

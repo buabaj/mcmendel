@@ -5,8 +5,12 @@ import { IoMenuOutline } from "react-icons/io5";
 import { Link as ScrollLink, animateScroll as scroll } from "react-scroll";
 
 function Hero({ cycleOpen }) {
+  const [dropdownOpen, setDropdownOpen] = React.useState(false);
   return (
-    <div className="h-screen relative bg-[url('/renewable-5.jpg')] bg-cover bg-center bg-no-repeat">
+    <div
+      className="h-screen relative bg-[url('/renewable-5.jpg')] bg-cover bg-center bg-no-repeat"
+      id={"home"}
+    >
       <div className="absolute w-full h-full bg-custom-transparent z-20">
         <nav>
           <div className="relative my-4 h-10 w-20 md:h-16 md:w-28 ">
@@ -23,11 +27,30 @@ function Hero({ cycleOpen }) {
 
           <ul className="gap-10 hidden md:flex">
             <li>
-              <Link href="/">
-                <a>HOME</a>
-              </Link>
+              <ScrollLink className="cursor-pointer" to="home" spy smooth>
+                HOME
+              </ScrollLink>
             </li>
-            <li>PROJECTS</li>
+            <li className="relative cursor-pointer">
+              <span onClick={() => setDropdownOpen((isOpen) => !isOpen)}>
+                PROJECTS
+              </span>
+              {dropdownOpen && (
+                <>
+                  <div className="bg-green-400 mt-2 w-48 h-20 absolute p-2 font-semibold">
+                    <ScrollLink
+                      className="cursor-pointer"
+                      to="green-project"
+                      spy
+                      smooth
+                      onClick={() => setDropdownOpen(false)}
+                    >
+                      The KNUST Green Project
+                    </ScrollLink>
+                  </div>
+                </>
+              )}
+            </li>
             <li>
               <ScrollLink className="cursor-pointer" to="about" spy smooth>
                 ABOUT
