@@ -18,7 +18,7 @@ module.exports = {
     minWidth: (theme) => ({
       ...theme('spacing'),
       'custom-min': '100vw',
-      'custom-small':'150px'
+      'custom-small': '150px'
     }),
 
     screens: {
@@ -50,6 +50,19 @@ module.exports = {
         'custom-xsm': '20px',
         'custom-xxsm': '16px',
         'custom-xxxsm': '10px'
+      },
+
+      backgroundPosition: {
+        'custom-y-lg': '0px -400px',
+        'custom-y-md': '0px -500px',
+        'custom-x': '205px -0px',
+        // 'custom-image': '-25px -8px',
+        // 'custom-image': '-25px -8px',
+        'custom-image-mob': '-35px 0px'
+      },
+
+      objectPosition: {
+        'custom-fit': '51px 50px'
       },
 
       fontFamily: {

@@ -105,7 +105,7 @@ export default function SlickSlider() {
           </div>
 
           <div>
-            <h3 className="text-custom-md mt-20">Solar Energy</h3>
+            <h3 className="text-custom-md mt-20">Wind Energy</h3>
             <p className="mt-5 text-oval-sm mulish text-justify sm:text-left sm:text-oval-lg">
               Ghana has moderate wind energy potential emanating from the
               country&apos;s annual average wind speed above 50m at 8m/s. The
@@ -116,7 +116,7 @@ export default function SlickSlider() {
           </div>
 
           <div>
-            <h3 className="text-custom-md mt-20">Solar Energy</h3>
+            <h3 className="text-custom-md mt-20">Biomass Energy</h3>
             <p className="mt-5 text-oval-sm mulish text-justify sm:text-left sm:text-oval-lg">
               Biomass is largely generated from horticulture (farm waste), food
               processing (corn cobs), animal farming manure, or human waste from

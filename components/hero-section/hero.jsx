@@ -82,7 +82,7 @@ function Hero({ cycleOpen }) {
 
             <h5 className="text-custom-xsm md:text-custom-sm sm:w-3/4 md:w-2/3 lg:w-1/2 mt-5 text-white">
               Fighting global warming and making the environment safer with the
-              use of green energy.
+              use of renewable energy.
             </h5>
           </div>
         </section>
