@@ -3,7 +3,7 @@ import React from "react";
 function Footer() {
   const mailto = () => {
     document.location.href =
-      "mailto:info@starzecenergy.com?subject=Hi Starzec Energy";
+      "mailto:starzecenergy@gmail.com?subject=Hi Starzec Energy";
   };
 
   const goTo = (location) => {
