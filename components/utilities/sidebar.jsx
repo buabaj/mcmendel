@@ -112,11 +112,11 @@ export default function SidebarComponent({ open, cycleOpen }) {
                       ABOUT
                     </ScrollLink>
                   </li>
-                  <li>
+                  {/* <li>
                     <Link href="/executives" passHref>
                       <a>OUR TEAM</a>
                     </Link>
-                  </li>
+                  </li> */}
 
                   <li>
                     <ScrollLink
