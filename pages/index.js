@@ -8,6 +8,7 @@ import GreenEnergy from "../components/green-energy/green-energy";
 import Hero from "../components/hero-section/hero";
 import News from "../components/news/news";
 import RenewableEnergy from "../components/renewable-energy/renewable-energy";
+import Meta from "../components/utilities/meta";
 import SidebarComponent from "../components/utilities/sidebar";
 import Sidebar from "../components/utilities/sidebar";
 
@@ -17,8 +18,9 @@ export default function Home() {
 
   return (
     <div>
+      <Meta title="Starzec Energy" />
       <SidebarComponent open={open} cycleOpen={cycleOpen} />
-      <Hero cycleOpen={cycleOpen}  />
+      <Hero cycleOpen={cycleOpen} />
       <About />
       <Goal />
       <RenewableEnergy />
