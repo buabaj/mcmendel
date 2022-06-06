@@ -47,7 +47,7 @@ function Nav({cycleOpen}) {
           </span>
           {dropdownOpen && (
             <>
-              <div className="bg-green-400 mt-2 w-48 h-20 absolute p-2 font-semibold">
+              <div className="bg-green-gray mt-2 w-48 h-20 absolute p-2 font-semibold">
                 <ScrollLink
                   className="cursor-pointer"
                   to="green-project"
