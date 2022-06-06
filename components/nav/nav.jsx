@@ -66,6 +66,9 @@ function Nav({cycleOpen}) {
             ABOUT
           </ScrollLink>
         </li>
+
+
+        
         {/* <li className="font-semibold">
           <Link href="/executives" passHref>
             <a>OUR TEAM</a>
