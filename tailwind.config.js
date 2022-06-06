@@ -17,7 +17,8 @@ module.exports = {
 
     minWidth: (theme) => ({
       ...theme('spacing'),
-      'custom-min': '100vw'
+      'custom-min': '100vw',
+      'custom-small':'150px'
     }),
 
     screens: {
