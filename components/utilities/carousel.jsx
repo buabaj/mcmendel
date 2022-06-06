@@ -15,6 +15,10 @@ function CarouselSlider() {
       emulateTouch
     >
       <div>
+        <div className="bg-[url('/27.jpg')] bg-no-repeat bg-center bg-cover h-screen" />
+      </div>
+
+      <div>
         <div className="bg-[url('/26.jpg')] bg-no-repeat bg-center bg-cover h-screen" />
       </div>
 

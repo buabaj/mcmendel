@@ -8,7 +8,6 @@ function Hero({ cycleOpen }) {
       id={"home"}
     >
       <div className="absolute w-full h-full bg-custom-transparent z-20">
-        <Nav cycleOpen={cycleOpen} />
 
         <section className="padded">
           <div className="mt-36 sm:mt-28 md:mt-40">

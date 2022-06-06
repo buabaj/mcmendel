@@ -21,7 +21,7 @@ function Footer() {
                 className="text-white cursor-pointer hover:font-semibold"
                 onClick={mailto}
               >
-                info@starzecenergy.com
+                starzecenergy@gmail.com
               </li>
               <li
                 className="text-white cursor-pointer hover:font-semibold"

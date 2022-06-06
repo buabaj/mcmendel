@@ -9,6 +9,7 @@ import {
   AccordionItemHeading,
   AccordionItemPanel,
 } from "react-accessible-accordion";
+import { useRouter } from "next/router";
 
 const links = [
   { name: "Home", to: "#", id: 1 },
@@ -40,6 +41,8 @@ const sideVariants = {
 };
 
 export default function SidebarComponent({ open, cycleOpen }) {
+  const router = useRouter();
+
   return (
     <main>
       <AnimatePresence>
@@ -71,67 +74,97 @@ export default function SidebarComponent({ open, cycleOpen }) {
 
               <ul className=" flex flex-col gap-4 px-6 mt-8 font-semibold">
                 <li>
-                  <ScrollLink
-                    className="cursor-pointer"
-                    to="home"
-                    spy
-                    smooth
-                    onClick={() => cycleOpen(false)}
-                  >
-                    HOME
-                  </ScrollLink>
+                  {router.route === "/" ? (
+                    <>
+                      <ScrollLink
+                        className="cursor-pointer"
+                        to="home"
+                        spy
+                        smooth
+                      >
+                        HOME
+                      </ScrollLink>
+                    </>
+                  ) : (
+                    <>
+                      <Link href="/">
+                        <a>HOME</a>
+                      </Link>
+                    </>
+                  )}
                 </li>
 
                 <li>
                   <details className="cursor-pointer">
                     <summary>PROJECTS</summary>
-
                     <p className="mt-2">
-                      <ScrollLink
-                        className="cursor-pointer"
-                        to="green-project"
-                        spy
-                        smooth
-                        onClick={() => cycleOpen(false)}
-                      >
-                        The KNUST Green Project
-                      </ScrollLink>
+                      {router.route === "/" ? (
+                        <>
+                          <ScrollLink
+                            className="cursor-pointer"
+                            to="green-project"
+                            spy
+                            smooth
+                            onClick={() => cycleOpen(false)}
+                          >
+                            The KNUST Green Project
+                          </ScrollLink>
+                        </>
+                      ) : (
+                        <>
+                          <Link href="/#green-project">
+                            <a>The KNUST Green Project</a>
+                          </Link>
+                        </>
+                      )}
                     </p>
                   </details>
                 </li>
 
                 <li>
-                  <ScrollLink
-                    className="cursor-pointer"
-                    to="about"
-                    spy
-                    smooth
-                    onClick={() => cycleOpen(false)}
-                  >
-                    ABOUT
-                  </ScrollLink>
+                  {router.route === "/" ? (
+                    <>
+                      <ScrollLink
+                        className="cursor-pointer"
+                        to="about"
+                        spy
+                        smooth
+                      >
+                        ABOUT
+                      </ScrollLink>
+                    </>
+                  ) : (
+                    <>
+                      <Link href="/#about">
+                        <a>ABOUT</a>
+                      </Link>
+                    </>
+                  )}
                 </li>
-                {/* <li>
-                    <Link href="/executives" passHref>
-                      <a>OUR TEAM</a>
-                    </Link>
-                  </li> */}
 
                 <li>
-                  <ScrollLink
-                    className="cursor-pointer"
-                    to="footer"
-                    spy
-                    smooth
-                    onClick={() => cycleOpen(false)}
-                  >
-                    CONTACT
-                  </ScrollLink>
+                  {router.route === "/" ? (
+                    <>
+                      <ScrollLink
+                        className="cursor-pointer"
+                        to="footer"
+                        spy
+                        smooth
+                      >
+                        CONTACT
+                      </ScrollLink>
+                    </>
+                  ) : (
+                    <>
+                      <Link href="/#footer">
+                        <a>CONTACT</a>
+                      </Link>
+                    </>
+                  )}
                 </li>
               </ul>
             </motion.div>
           </motion.aside>
-          // </section>
         )}
       </AnimatePresence>
     </main>
