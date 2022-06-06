@@ -1,4 +1,5 @@
 import { useCycle } from "framer-motion";
+import Head from "next/head";
 import React from "react";
 import About from "../components/about/about";
 import Executive from "../components/executive/executive";
@@ -17,8 +18,21 @@ export default function Home() {
   const [open, cycleOpen] = useCycle(false, true);
 
   return (
-    <div>
-      <Meta title="Starzec Energy" />
+    <>
+      <Head>
+        <meta
+          name="description"
+          content="Starzec, formerly McMendel Energy is an energy provision, a global
+              warming and climate change advocate company aspiring to change the
+              face of energy using green energy."
+        />
+        <meta
+          name="title"
+          content="Starzec Energy - Changing the face of energy in Africa"
+        />
+        <title>Starzec Energy</title>
+      </Head>
+
       <Nav cycleOpen={cycleOpen} />
       <SidebarComponent open={open} cycleOpen={cycleOpen} />
       <Hero cycleOpen={cycleOpen} />
@@ -28,6 +42,6 @@ export default function Home() {
       <GreenEnergy />
       <News />
       <Footer />
-    </div>
+    </>
   );
 }
