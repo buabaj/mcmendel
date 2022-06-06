@@ -17,20 +17,52 @@ function Footer() {
           <div>
             <ul className="flex flex-col gap-3">
               <li className="text-white">Starzecenergy</li>
-              <li className="text-white">info@starzecenergy.com</li>
-              <li className="text-white">+233 20 912 6193</li>
+              <li
+                className="text-white cursor-pointer hover:font-semibold"
+                onClick={mailto}
+              >
+                info@starzecenergy.com
+              </li>
+              <li
+                className="text-white cursor-pointer hover:font-semibold"
+                onClick={() => goTo("wa.me/+233209126193")}
+              >
+                +233 20 912 6193
+              </li>
               <li className="text-white">Accra, Ghana</li>
             </ul>
 
             <ul className="flex gap-4 my-3">
               <li>
-                <div className="bg-[url('/facebook.png')] bg-no-repeat bg-contain h-5 w-5" />
+                <div
+                  onClick={() =>
+                    goTo(
+                      "www.facebook.com/Starzec-Energy-103972402344165"
+                    )
+                  }
+                  className="bg-[url('/facebook.png')] bg-no-repeat bg-contain h-5 w-5 cursor-pointer"
+                />
               </li>
               <li>
-                <div className="bg-[url('/instagram.png')] bg-no-repeat bg-contain h-5 w-5" />
+                <div
+                  onClick={() => goTo("twitter.com/starzec_energy/")}
+                  className="bg-[url('/instagram.png')] bg-no-repeat bg-contain h-5 w-5 cursor-pointer"
+                />
               </li>
               <li>
-                <div className="bg-[url('/twitter.png')] bg-no-repeat bg-contain h-5 w-5" />
+                <div
+                  onClick={() => goTo("twitter.com/starzec_energy")}
+                  className="bg-[url('/twitter.png')] bg-no-repeat bg-contain h-5 w-5 cursor-pointer"
+                />
+              </li>
+
+              <li>
+                <div
+                  onClick={() =>
+                    goTo("www.linkedin.com/company/starzec-energy")
+                  }
+                  className="bg-[url('/linkedin.png')] bg-no-repeat bg-contain h-5 w-5 cursor-pointer"
+                />
               </li>
             </ul>
           </div>
