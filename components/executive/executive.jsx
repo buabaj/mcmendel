@@ -6,8 +6,8 @@ function Executive() {
       <section className="padded py-20">
         <h3 className="text-custom-md mb-4">Meet Our Executives</h3>
 
-        <div className="mt-8 flex text-center justify-between">
-          <div className="flex w-1/3 flex-col items-center">
+        <div className="mt-8 flex flex-col gap-10 md:gap-8 md:flex-row text-center md:justify-between">
+          <div className="flex md:w-1/3 flex-col items-center">
             <div className="card" />
             <div className="mt-4 px-8">
               <h3>Mr Makafui Mendelson Ametsitsi</h3>
@@ -16,7 +16,7 @@ function Executive() {
             </div>
           </div>
 
-          <div className="flex w-1/3 flex-col items-center">
+          <div className="flex md:w-1/3 flex-col items-center">
             <div className="card" />
             <div className="mt-4 px-8">
               <h3>Mr Makafui Mendelson Ametsitsi</h3>
@@ -25,7 +25,7 @@ function Executive() {
             </div>
           </div>
 
-          <div className="flex w-1/3 flex-col items-center">
+          <div className="flex md:w-1/3 flex-col items-center">
             <div className="card" />
             <div className="mt-4 px-8">
               <h3>Mr Makafui Mendelson Ametsitsi</h3>

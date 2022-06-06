@@ -44,103 +44,96 @@ export default function SidebarComponent({ open, cycleOpen }) {
     <main>
       <AnimatePresence>
         {open && (
-          // <section
-          //   className=" bg-custom-transparent absolute w-full h-full z-30"
-          //   onClick={() => cycleOpen(false)}
-          // >
-            <motion.aside
-              className="w-36 bg-green-400 fixed bottom-0 top-0 z-50 right-0"
-              initial={{ width: 0 }}
-              animate={{
-                width: 300,
-              }}
-              exit={{
-                width: 0,
-                transition: { duration: 0.3 },
-              }}
+          <motion.aside
+            className="w-36 bg-green-gray fixed bottom-0 top-0 z-50 right-0"
+            initial={{ width: 0 }}
+            animate={{
+              width: 300,
+            }}
+            exit={{
+              width: 0,
+              transition: { duration: 0.3 },
+            }}
+          >
+            <motion.div
+              className="container"
+              initial="closed"
+              animate="open"
+              exit="closed"
+              variants={sideVariants}
             >
-              <motion.div
-                className="container"
-                initial="closed"
-                animate="open"
-                exit="closed"
-                variants={sideVariants}
-              >
-                <IoCloseOutline
-                  className="ml-3 mt-3 cursor-pointer z-40"
-                  color="white"
-                  size={"30"}
-                  onClick={() => cycleOpen(false)}
-                />
+              <IoCloseOutline
+                className="ml-3 mt-3 cursor-pointer z-40"
+                color="white"
+                size={"30"}
+                onClick={() => cycleOpen(false)}
+              />
 
-                <ul className=" flex flex-col gap-4 px-6 mt-8 font-semibold">
-                  <li>
-                    <ScrollLink
-                      className="cursor-pointer"
-                      to="home"
-                      spy
-                      smooth
-                      onClick={() => cycleOpen(false)}
-                    >
-                      HOME
-                    </ScrollLink>
-                  </li>
+              <ul className=" flex flex-col gap-4 px-6 mt-8 font-semibold">
+                <li>
+                  <ScrollLink
+                    className="cursor-pointer"
+                    to="home"
+                    spy
+                    smooth
+                    onClick={() => cycleOpen(false)}
+                  >
+                    HOME
+                  </ScrollLink>
+                </li>
 
-                  <li>
-                    <details className="cursor-pointer">
-                      <summary>PROJECTS</summary>
+                <li>
+                  <details className="cursor-pointer">
+                    <summary>PROJECTS</summary>
 
-                      <p className="mt-2">
-                        <ScrollLink
-                          className="cursor-pointer"
-                          to="green-project"
-                          spy
-                          smooth
-                          onClick={() => cycleOpen(false)}
-                        >
-                          The KNUST Green Project
-                        </ScrollLink>
-                      </p>
-                    </details>
-                  </li>
+                    <p className="mt-2">
+                      <ScrollLink
+                        className="cursor-pointer"
+                        to="green-project"
+                        spy
+                        smooth
+                        onClick={() => cycleOpen(false)}
+                      >
+                        The KNUST Green Project
+                      </ScrollLink>
+                    </p>
+                  </details>
+                </li>
 
-                  <li>
-                    <ScrollLink
-                      className="cursor-pointer"
-                      to="about"
-                      spy
-                      smooth
-                      onClick={() => cycleOpen(false)}
-                    >
-                      ABOUT
-                    </ScrollLink>
-                  </li>
-                  <li>
+                <li>
+                  <ScrollLink
+                    className="cursor-pointer"
+                    to="about"
+                    spy
+                    smooth
+                    onClick={() => cycleOpen(false)}
+                  >
+                    ABOUT
+                  </ScrollLink>
+                </li>
+                {/* <li>
                     <Link href="/executives" passHref>
                       <a>OUR TEAM</a>
                     </Link>
-                  </li>
+                  </li> */}
 
-                  <li>
-                    <ScrollLink
-                      className="cursor-pointer"
-                      to="footer"
-                      spy
-                      smooth
-                      onClick={() => cycleOpen(false)}
-                    >
-                      CONTACT
-                    </ScrollLink>
-                  </li>
-                </ul>
-              </motion.div>
-            </motion.aside>
+                <li>
+                  <ScrollLink
+                    className="cursor-pointer"
+                    to="footer"
+                    spy
+                    smooth
+                    onClick={() => cycleOpen(false)}
+                  >
+                    CONTACT
+                  </ScrollLink>
+                </li>
+              </ul>
+            </motion.div>
+          </motion.aside>
           // </section>
         )}
       </AnimatePresence>
-      {/* <div className="btn-container">
-        <button onClick={cycleOpen}>{open ? "Close" : "Open"}</button>
-      </div> */}
     </main>
   );
 }
