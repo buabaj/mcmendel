@@ -66,11 +66,11 @@ function Nav({cycleOpen}) {
             ABOUT
           </ScrollLink>
         </li>
-        <li className="font-semibold">
+        {/* <li className="font-semibold">
           <Link href="/executives" passHref>
             <a>OUR TEAM</a>
           </Link>
-        </li>
+        </li> */}
 
         <li className="font-semibold">
           <ScrollLink className="cursor-pointer" to="footer" spy smooth>
