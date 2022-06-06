@@ -31,7 +31,6 @@ function About() {
         </div>
       </div>
 
-
       <div className="md:mt-24" />
     </section>
   );

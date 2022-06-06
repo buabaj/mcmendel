@@ -28,7 +28,8 @@
     @apply box-border text-black font-montserrat;
   }
   nav {
-    @apply px-6 sm:px-16 md:px-24 lg:px-36 flex justify-between items-center bg-custom-transparent-deeper;
+    @apply px-6 sm:px-16 md:px-24 lg:px-36 flex justify-between items-center
+    fixed top-0 w-full;
   }
 
   li {

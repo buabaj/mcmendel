@@ -6,25 +6,20 @@ function CarouselSlider() {
   return (
     <Carousel
       showArrows
-      infiniteLoop
+      // infiniteLoop
       swipeable={false}
       showThumbs={false}
       useKeyboardArrows
       stopOnHover={false}
-      autoPlay
+      // autoPlay
       emulateTouch
     >
       <div>
-        <div className="bg-[url('/26.jpg')] bg-no-repeat bg-center bg-cover h-screen relative">
-          <div className="absolute bottom-0 right-3 text-white text-right">
-            The KNUST Green Project <br />
-            Kumasi, Ghana
-          </div>
-        </div>
+        <div className="bg-[url('/26.jpg')] bg-no-repeat bg-center bg-cover h-screen" />
       </div>
 
       <div>
-        <div className="bg-[url('/16.jpg')] bg-no-repeat bg-center bg-cover h-screen" />
+        <div className="bg-[url('/16.jpg')] bg-no-repeat bg-cover h-screen bg-custom-y-lg" />
       </div>
 
       <div>
@@ -50,7 +45,7 @@ function CarouselSlider() {
         <div className="bg-[url('/3.jpg')] bg-no-repeat bg-center bg-cover h-screen" />
       </div>
       <div>
-        <div className="bg-[url('/2.jpg')] bg-no-repeat bg-center bg-cover h-screen" />
+        <div className="bg-[url('/2.jpg')] bg-no-repeat bg-cover h-screen bg-custom-y-lg" />
       </div>
 
       <div>
@@ -58,11 +53,11 @@ function CarouselSlider() {
       </div>
 
       <div>
-        <div className="bg-[url('/5.jpg')] bg-no-repeat bg-center bg-cover h-screen" />
+        <div className="bg-[url('/5.jpg')] bg-no-repeat bg-cover h-screen bg-custom-y-md" />
       </div>
 
       <div>
-        <div className="bg-[url('/6.jpg')] bg-no-repeat bg-center bg-cover h-screen" />
+        <div className="bg-[url('/11.jpg')] bg-no-repeat bg-cover h-screen bg-center" />
       </div>
       <div>
         <div className="bg-[url('/7.jpg')] bg-no-repeat bg-center bg-cover h-screen" />
