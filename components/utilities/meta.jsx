@@ -8,10 +8,10 @@ const Meta = (props) => {
             <meta name="viewport" content="initial-scale=1.0, width=device-width" />
             <meta property="og:title" content={props.title} />
             <meta property="og:type" content="website" />
-            <meta property="og:image" itemProp="image" content="https://i.ibb.co/6J56NSG/26.jpg" />
+            <meta property="og:image" itemProp="image" content="https://i.ibb.co/HGK6rR5/starzec-logo.jpg" />
             <meta property="og:description" content="Starzec Energy is an energy provision and a global warming and climate change advocate company aspiring to change the face of energy using green energy. The Company is driven by its vision of making an impact in the energy sector of Ghana and Africa, which inspires, motivates and keeps the Firm focused on doing what really matters." />
             <meta property="og:site_name" content={props.title} />
-            <meta property="og:image" content="https://i.ibb.co/6J56NSG/26.jpg" />
+            <meta property="og:image" content="https://i.ibb.co/HGK6rR5/starzec-logo.jpg" />
             <meta property="twitter:card" content="summary_large_image" />
             <meta property="twitter:title" content={props.title} />
             <meta name="twitter:image" content="https://i.ibb.co/HGK6rR5/starzec-logo.jpg" />
