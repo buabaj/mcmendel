@@ -49,7 +49,7 @@ export default function SidebarComponent({ open, cycleOpen }) {
           //   onClick={() => cycleOpen(false)}
           // >
             <motion.aside
-              className="w-36 bg-green-400 fixed bottom-0 top-0 z-50 right-0"
+              className="w-36 bg-green-gray fixed bottom-0 top-0 z-50 right-0"
               initial={{ width: 0 }}
               animate={{
                 width: 300,
