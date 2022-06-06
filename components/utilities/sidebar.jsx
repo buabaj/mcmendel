@@ -44,10 +44,7 @@ export default function SidebarComponent({ open, cycleOpen }) {
     <main>
       <AnimatePresence>
         {open && (
-          // <section
-          //   className=" bg-custom-transparent absolute w-full h-full z-30"
-          //   onClick={() => cycleOpen(false)}
-          // >
+  
             <motion.aside
               className="w-36 bg-green-gray fixed bottom-0 top-0 z-50 right-0"
               initial={{ width: 0 }}
@@ -138,9 +135,7 @@ export default function SidebarComponent({ open, cycleOpen }) {
           // </section>
         )}
       </AnimatePresence>
-      {/* <div className="btn-container">
-        <button onClick={cycleOpen}>{open ? "Close" : "Open"}</button>
-      </div> */}
+
     </main>
   );
 }
