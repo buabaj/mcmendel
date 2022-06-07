@@ -10,15 +10,8 @@ export default function NewsDetailPage() {
 
   return (
     <>
-      <Head>
-  
-        <meta name="description" content="dynamic" />
-        <meta name="title" content="dynamic title" />
 
-        <title>Starzec Energy</title>
-      </Head>
-
-      {/* <Meta title="Starzec Energy - News" /> */}
+      <Meta title="Starzec Energy - News" />
 
       <Nav bgColor="bg-green-gray" cycleOpen={cycleOpen} />
 
