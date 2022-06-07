@@ -19,19 +19,7 @@ export default function Home() {
 
   return (
     <>
-      <Head>
-        <meta
-          name="description"
-          content="Starzec, formerly McMendel Energy is an energy provision, a global
-              warming and climate change advocate company aspiring to change the
-              face of energy using green energy."
-        />
-        <meta
-          name="title"
-          content="Starzec Energy - Changing the face of energy in Africa"
-        />
-        <title>Starzec Energy</title>
-      </Head>
+      <Meta title="Starzec Energy" />
 
       <Nav cycleOpen={cycleOpen} />
       <SidebarComponent open={open} cycleOpen={cycleOpen} />
